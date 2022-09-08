@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  /* outline: 1px solid gold; */
+  outline: 1px solid gold;
 }
 
 body {
@@ -25,9 +25,10 @@ code {
   border: none!important;
   border-radius: none !important;
 } */
-/* .hero {
+.hero {
 background-color: #EEE2FF !important;
-} */
+height: 85vh;
+}
 
 .heroImg {
   /* background-image: url(./img/heroImg.jpg); */
