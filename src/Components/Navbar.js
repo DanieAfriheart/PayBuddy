@@ -6,8 +6,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 // import { IconName } from "react-icons/fc";
 
 function CollapsibleExample() {
+
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar fixed='top' className='shadow-sm' collapseOnSelect expand="lg" bg="" variant="light" style={{backgroundColor: '#FFFFFF'}}>
             <Container>
                 <Navbar.Brand href="#home" className='fw-bold'>PayBuddy</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

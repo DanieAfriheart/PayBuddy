@@ -26,8 +26,8 @@ code {
   border-radius: none !important;
 } */
 .hero {
-background-color: #EEE2FF !important;
-height: 85vh;
+background-color: #FFFFFF !important;
+height: 95vh;
 }
 
 .heroImg {
@@ -41,4 +41,7 @@ height: 85vh;
 .bgCustom {
   /* background-color: rgba(161, 209, 255, 20%); */
   background-color: rgb(245, 245, 255);
+}
+input{
+  background-color: none !important;
 }

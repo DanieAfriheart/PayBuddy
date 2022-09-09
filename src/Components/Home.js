@@ -4,19 +4,20 @@ import { FcRight } from "react-icons/fc";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-
+import PureCounter from "@srexi/purecounterjs";
 const Home = () => {
 
     const handleNewsletter = () => {
         alert('gbemidebe');
     }
+    const pure = new PureCounter();
 
     return (
         <>
-            <Container fluid className='pt-5 bg-light d-flex align-items-center hero'>
+            <Container fluid className='pt-5 d-flex align-items-center hero'>
                 <Container className='h-100'>
-                    <Row className='d-flex flex-row align-items-center h-100'>
-                        <Col md={5}>
+                    <Row className='d-flex flex-row align-items-center justify-content-between h-100'>
+                        <Col md={6}>
                             <div className="header">
                                 <h1 className='fw-bold display-4 col-md-10'>A special credit card made for Developers.</h1>
                                 <p className='my-4 mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate enim. Asperiores, dolor molestiae.</p>
@@ -27,13 +28,21 @@ const Home = () => {
                                     placeholder="Subscribe to our newsletter"
                                     className="me-2"
                                     aria-label="Search"
-                                    style={{ border: 'none' }}
+                                    style={{ border: 'none', backgroundColor: 'none' }}
                                 />
                                 <Button variant="dark" onClick={handleNewsletter}>Subscribe</Button>
                             </Form>
+                            <Row>
+                                <Col>
+                                    <div className="countbox">
+                                        <span data-purecounter-start='0' data-purecounter-end='3' data-precounter-duration='1' className='purecounter'></span>
+                                        Atm
+                                    </div>
+                                </Col>
+                            </Row>
                         </Col>
-                        <Col md={7}>
-                            <img className='img-fluid' src={require('../img/heroImg.jpg')} alt="" />
+                        <Col md={6}>
+                            <img className='img-fluid w-100' src={require('../img/HomeImg.png')} alt="" />
                         </Col>
                     </Row>
                 </Container>
