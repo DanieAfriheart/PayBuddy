@@ -4,19 +4,18 @@ import { FcRight } from "react-icons/fc";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import PureCounter from "@srexi/purecounterjs";
+
 const Home = () => {
 
     const handleNewsletter = () => {
         alert('gbemidebe');
     }
-    const pure = new PureCounter();
 
     return (
         <>
-            <Container fluid className='pt-5 d-flex align-items-center hero'>
+            <Container fluid className='py-5 mt-5 d-flex align-items-center hero'>
                 <Container className='h-100'>
-                    <Row className='d-flex flex-row align-items-center justify-content-between h-100'>
+                    <Row className='py-5 d-flex flex-row align-items-center justify-content-between h-100'>
                         <Col md={6}>
                             <div className="header">
                                 <h1 className='fw-bold display-4 col-md-10'>A special credit card made for Developers.</h1>
@@ -32,12 +31,18 @@ const Home = () => {
                                 />
                                 <Button variant="dark" onClick={handleNewsletter}>Subscribe</Button>
                             </Form>
-                            <Row>
-                                <Col>
-                                    <div className="countbox">
-                                        <span data-purecounter-start='0' data-purecounter-end='3' data-precounter-duration='1' className='purecounter'></span>
-                                        Atm
-                                    </div>
+                            <Row md={6}>
+                                <Col md={3} className='d-flex align-items-center'>
+                                    <p className="lead fw-bold fs-3 me-2">100+</p>
+                                    <p>Cards <br /> Delivered</p>
+                                </Col>
+                                <Col className='d-flex align-items-center text-center d-flex justify-content-center'>
+                                    <img className='img-fluid' src={require('../img/scribble.png')} alt="" />
+
+                                </Col>
+                                <Col md={3} className='d-flex align-items-center'>
+                                    <p className="lead fw-bold fs-3 me-2">$10M+</p>
+                                    <p>Transactions <br /> Completed</p>
                                 </Col>
                             </Row>
                         </Col>
