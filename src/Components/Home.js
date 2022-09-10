@@ -93,15 +93,15 @@ const Home = () => {
                 </Container>
             </Container>
             <Container fluid className='py-5'>
-                <Container className='p-5 rounded rounded-4' style={{backgroundColor:'#F6F8FF'}}>
+                <Container className='p-5 rounded rounded-4' style={{backgroundColor:'#F3F3EC'}}>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
-                        <Col md={4}>
-                            <img src={require('../img/img3.png')} alt="" className='img-fluid' />
+                        <Col md={5}>
+                            <img src={require('../img/home.gif')} alt="" className='img-fluid' />
                         </Col>
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-3' style={{ color: '#BFA7E6' }}>"Transfa"</h5>
-                            <h1 className='fw-bold'>Express yourself when you send money</h1>
-                            <p className='my-3 col-md-10 '>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
+                            <h5 className='mb-3' style={{ color: '#E3AA62' }}>"Transfa"</h5>
+                            <h1 className='fw-bold'>Seamless payments experience</h1>
+                            <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
                             <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
                                     Get started with PayBuddy <FcRight />
