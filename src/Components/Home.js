@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
         <>
-            <Container fluid className='py-5 mt-5 d-flex align-items-center hero'>
+            <Container fluid className='py-5 mt-5 d-flex align-items-center hero' >
                 <Container className='h-100'>
                     <Row className='py-5 d-flex flex-row align-items-center justify-content-between h-100'>
                         <Col md={6}>
@@ -93,14 +93,14 @@ const Home = () => {
                 </Container>
             </Container>
             <Container fluid className='py-5'>
-                <Container className='bgCustom p-5 rounded rounded-4'>
+                <Container className='p-5 rounded rounded-4' style={{backgroundColor:'#F6F8FF'}}>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
-                        <Col md={6}>
-                            <img src={require('../img/ladies.png')} alt="" className='img-fluid' />
+                        <Col md={4}>
+                            <img src={require('../img/img3.png')} alt="" className='img-fluid' />
                         </Col>
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-3' style={{ color: '#EECCD8' }}>"My Kolo"</h5>
-                            <h1 className='fw-bold'>A New Way to Save</h1>
+                            <h5 className='mb-3' style={{ color: '#BFA7E6' }}>"Transfa"</h5>
+                            <h1 className='fw-bold'>Express yourself when you send money</h1>
                             <p className='my-3 col-md-10 '>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
                             <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
