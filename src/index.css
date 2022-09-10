@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  outline: 1px solid gold;
+  /* outline: 1px solid gold; */
 }
 
 body {
@@ -41,7 +41,7 @@ background-color: #FFFFFF !important;
 .bgCustom {
   /* background-color: rgba(161, 209, 255, 20%); */
   /* background-color: rgb(245, 245, 255); */
-  background-color: #FCF8FF;
+  background-color: #F7F4FD;
 }
 input{
   background-color: none !important;

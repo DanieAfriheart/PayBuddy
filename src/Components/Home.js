@@ -4,7 +4,6 @@ import { FcRight } from "react-icons/fc";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-// import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -19,8 +18,8 @@ const Home = () => {
                     <Row className='py-5 d-flex flex-row align-items-center justify-content-between h-100'>
                         <Col md={6}>
                             <div className="header">
-                                <h1 className='fw-bold display-4 col-md-10'>A special credit card made for Developers.</h1>
-                                <p className='my-4 mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate enim. Asperiores, dolor molestiae.</p>
+                                <h1 className='fw-bold col-md-10'>A special credit card made for Developers.</h1>
+                                <p className='my-4 mx-auto '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
                             </div>
                             <Form className="d-flex border rounded p-1 mx-auto mb-5">
                                 <Form.Control
@@ -34,15 +33,14 @@ const Home = () => {
                             </Form>
                             <Row md={6}>
                                 <Col md={3} className='d-flex align-items-center'>
-                                    <p className="lead fw-bold fs-3 me-2">100+</p>
+                                    <p className=" fw-bold fs-3 me-2">100+</p>
                                     <p>Cards <br /> Delivered</p>
                                 </Col>
                                 <Col className='d-flex align-items-center text-center d-flex justify-content-center'>
                                     <img className='img-fluid' src={require('../img/scribble.png')} alt="" />
-
                                 </Col>
                                 <Col md={3} className='d-flex align-items-center'>
-                                    <p className="lead fw-bold fs-3 me-2">$10M+</p>
+                                    <p className=" fw-bold fs-3 me-2">$10M+</p>
                                     <p>Transactions <br /> Completed</p>
                                 </Col>
                             </Row>
@@ -61,10 +59,9 @@ const Home = () => {
                             <img src={require('../img/ladies.png')} alt="" className='img-fluid' />
                         </Col>
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-3' style={{color:'#EECCD8'}}>"My Kolo"</h5>
+                            <h5 className='mb-3' style={{ color: '#EECCD8' }}>"My Kolo"</h5>
                             <h1 className='fw-bold'>A New Way to Save</h1>
-                            <p className='my-3 col-md-10 lead'>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
-                            {/* <Button>Create free account</Button> */}
+                            <p className='my-3 col-md-10 '>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
                             <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
                                     Get started with PayBuddy <FcRight />
@@ -77,11 +74,11 @@ const Home = () => {
             <Container fluid className='py-5'>
                 <Container className='px-5 rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
-                       
+
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-3' style={{color:'#EECCD8'}}>"My Kolo"</h5>
-                            <h1 className='fw-bold'>A New Way to Save</h1>
-                            <p className='my-3 col-md-10 lead'>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
+                            <h5 className='mb-3' style={{ color: '#3BB75E' }}>"Delight"</h5>
+                            <h1 className='fw-bold'>Seamless payments experience</h1>
+                            <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
                             {/* <Button>Create free account</Button> */}
                             <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
@@ -90,12 +87,30 @@ const Home = () => {
                             </div>
                         </Col>
                         <Col md={6}>
-                            <img src={require('../img/img1.png')} alt="" className='img-fluid' />
+                            <img src={require('../img/map.jpg')} alt="" className='img-fluid' />
                         </Col>
                     </Row>
                 </Container>
             </Container>
-           
+            <Container fluid className='py-5'>
+                <Container className='bgCustom p-5 rounded rounded-4'>
+                    <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
+                        <Col md={6}>
+                            <img src={require('../img/ladies.png')} alt="" className='img-fluid' />
+                        </Col>
+                        <Col md={5} className='justify-content-center d-flex flex-column'>
+                            <h5 className='mb-3' style={{ color: '#EECCD8' }}>"My Kolo"</h5>
+                            <h1 className='fw-bold'>A New Way to Save</h1>
+                            <p className='my-3 col-md-10 '>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
+                            <div className="d-flex">
+                                <Button variant="transparent" className='text-small px-0 border-0'>
+                                    Get started with PayBuddy <FcRight />
+                                </Button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </Container>
 
             <Container fluid className='py-5'>
                 <Container>
