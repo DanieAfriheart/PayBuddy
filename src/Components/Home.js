@@ -4,10 +4,13 @@ import { FcRight } from "react-icons/fc";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import Card from 'react-bootstrap/Card';
 
 // images
 import Transfer from "../img/trans.svg";
-
+import entre from "../img/entrepreneur.svg"
+import inter from "../img/international.svg"
+import orga from "../img/organisation.svg"
 const Home = () => {
 
     const handleNewsletter = () => {
@@ -55,7 +58,9 @@ const Home = () => {
                 </Container>
             </Container>
 
-            <Container fluid className='py-5'>
+            {/* Section 1 */}
+
+            <Container fluid className='py-5 section1'>
                 <Container className='bgCustom p-5 rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
                         <Col md={6}>
@@ -74,7 +79,10 @@ const Home = () => {
                     </Row>
                 </Container>
             </Container>
-            <Container fluid className='py-5'>
+
+            {/* Section 2 */}
+
+            <Container fluid className='py-5 section2'>
                 <Container className='px-5 rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
 
@@ -95,22 +103,28 @@ const Home = () => {
                     </Row>
                 </Container>
             </Container>
-            <Container fluid className='py-5'>
-                <Container className='p-5 rounded rounded-4' style={{backgroundColor:'#F5F5FF'}}>
-                    <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
-                        <Col md={6}>
-                            <img src={Transfer} alt="" className='img-fluid' />
+
+            {/* Section 3 */}
+
+            <Container fluid className='py-5 section3' style={{ backgroundColor: '#F5F5FF' }}>
+                <Container className='p-5'>
+                    <h1 className='fw-bold'>Trusted by 7000+ developers</h1>
+                    <p className='col-md-7 my-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure sunt nesciunt corrupti, et omnis assumenda totam magnam. Ut, nobis.</p>
+                    <Row className="justify-content-between pt-5">
+                        <Col md={4}>
+                            <Card style={{ width: '100%' }}>
+                                <Card.Body>
+                                    <img src={inter} alt="" className='img-fluid col-5' />
+                                    <Card.Title className='fw-bold col-md-7 my-3'>PayBuddy for <br /> global developers</Card.Title>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.
+                                    </Card.Text>
+                                    <Card.Link href="#">Card Link</Card.Link>
+                                </Card.Body>
+                            </Card>
                         </Col>
-                        <Col md={5} className='justify-content-center d-flex flex-column'>
-                            {/* <h5 className='mb-3' style={{ color: '#E3AA62' }}></h5> */}
-                            <h1 className='fw-bold'>Give With Love ❤️ </h1>
-                            <p className='my-3 col-md-10 '>Make a difference by supporting fundraisers, gift Egbon Adugbo with ease.</p>
-                            <div className="d-flex">
-                                <Button variant="transparent" className='text-small px-0 border-0'>
-                                    Give through the app <FcRight />
-                                </Button>
-                            </div>
-                        </Col>
+                       
                     </Row>
                 </Container>
             </Container>

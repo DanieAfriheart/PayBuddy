@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  /* outline: 1px solid gold; */
+  outline: 1px solid gold;
 }
 
 .logoIcon {
@@ -67,4 +67,19 @@ input {
 
 span {
   font-weight: 400 !important;
+}
+.section1{
+  background-image: url(./img/curved-pattern.png);
+  background-size: 600px 600px;
+  /* background-position: 400px 0; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* -webkit-filter: hue-rotate(800deg) invert(0.4); */
+  /* filter: hue-rotate(800deg) invert(0.4); */
+  /* opacity: 0.1; */
+  /* background-position: center; */
+  /* filter: grayscale(100%); */
+}
+Card{
+  border: none !important;
 }
