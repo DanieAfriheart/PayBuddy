@@ -5,6 +5,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 
+// images
+import Transfer from "../img/trans.svg";
+
 const Home = () => {
 
     const handleNewsletter = () => {
@@ -29,7 +32,7 @@ const Home = () => {
                                     aria-label="Search"
                                     style={{ border: 'none', backgroundColor: 'none' }}
                                 />
-                                <Button variant="dark" onClick={handleNewsletter}>Subscribe</Button>
+                                <Button variant="dark" className='Btn' onClick={handleNewsletter}>Subscribe</Button>
                             </Form>
                             <Row md={6}>
                                 <Col md={3} className='d-flex align-items-center'>
@@ -76,13 +79,13 @@ const Home = () => {
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
 
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-3' style={{ color: '#3BB75E' }}>"Delight"</h5>
+                            <h5 className='mb-3' style={{ color: '#3BB75E' }}>"Transfa"</h5>
                             <h1 className='fw-bold'>Seamless payments experience</h1>
                             <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
                             {/* <Button>Create free account</Button> */}
                             <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
-                                    Get started with PayBuddy <FcRight />
+                                    Send money now <FcRight />
                                 </Button>
                             </div>
                         </Col>
@@ -93,18 +96,18 @@ const Home = () => {
                 </Container>
             </Container>
             <Container fluid className='py-5'>
-                <Container className='p-5 rounded rounded-4' style={{backgroundColor:'#F3F3EC'}}>
+                <Container className='p-5 rounded rounded-4' style={{backgroundColor:'#F5F5FF'}}>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
-                        <Col md={5}>
-                            <img src={require('../img/home.gif')} alt="" className='img-fluid' />
+                        <Col md={6}>
+                            <img src={Transfer} alt="" className='img-fluid' />
                         </Col>
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-3' style={{ color: '#E3AA62' }}>"Transfa"</h5>
-                            <h1 className='fw-bold'>Seamless payments experience</h1>
-                            <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
+                            {/* <h5 className='mb-3' style={{ color: '#E3AA62' }}></h5> */}
+                            <h1 className='fw-bold'>Give With Love ❤️ </h1>
+                            <p className='my-3 col-md-10 '>Make a difference by supporting fundraisers, gift Egbon Adugbo with ease.</p>
                             <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
-                                    Get started with PayBuddy <FcRight />
+                                    Give through the app <FcRight />
                                 </Button>
                             </div>
                         </Col>
