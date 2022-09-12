@@ -1,11 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import { FcRight } from "react-icons/fc";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
-
+// Icon
+// import { FcRight } from "react-icons/fc";
+import { BsArrowRight } from "react-icons/bs";
 // images
 import Transfer from "../img/trans.svg";
 import entre from "../img/entrepreneur.svg"
@@ -72,7 +73,7 @@ const Home = () => {
                             <p className='my-3 col-md-10 '>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
                             <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
-                                    Get started with PayBuddy <FcRight />
+                                    Get started with PayBuddy <BsArrowRight />
                                 </Button>
                             </div>
                         </Col>
@@ -93,7 +94,7 @@ const Home = () => {
                             {/* <Button>Create free account</Button> */}
                             <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
-                                    Send money now <FcRight />
+                                    Send money now <BsArrowRight />
                                 </Button>
                             </div>
                         </Col>
@@ -106,25 +107,50 @@ const Home = () => {
 
             {/* Section 3 */}
 
-            <Container fluid className='py-5 section3' style={{ backgroundColor: '#F5F5FF' }}>
+            <Container fluid className='py-5 section3' style={{ backgroundColor: '#EAF6FC' }}>
                 <Container className='p-5'>
-                    <h1 className='fw-bold'>Trusted by 7000+ developers</h1>
+                    <h1 className='fw-bold'>Who can use PayBuddy</h1>
                     <p className='col-md-7 my-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure sunt nesciunt corrupti, et omnis assumenda totam magnam. Ut, nobis.</p>
                     <Row className="justify-content-between pt-5">
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>
-                                <Card.Body>
+                                <Card.Body className='p-4'>
                                     <img src={inter} alt="" className='img-fluid col-5' />
-                                    <Card.Title className='fw-bold col-md-7 my-3'>PayBuddy for <br /> global developers</Card.Title>
-                                    <Card.Text>
+                                    <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
+                                    <Card.Text className='mb-4'>
                                         Some quick example text to build on the card title and make up the
                                         bulk of the card's content.
                                     </Card.Text>
-                                    <Card.Link href="#">Card Link</Card.Link>
+                                    <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
                                 </Card.Body>
                             </Card>
                         </Col>
-                       
+                        <Col md={4}>
+                            <Card style={{ width: '100%' }}>
+                                <Card.Body className='p-4'>
+                                    <img src={inter} alt="" className='img-fluid col-5' />
+                                    <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
+                                    <Card.Text className='mb-4'>
+                                        Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.
+                                    </Card.Text>
+                                    <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col md={4}>
+                            <Card style={{ width: '100%' }}>
+                                <Card.Body className='p-4'>
+                                    <img src={inter} alt="" className='img-fluid col-5' />
+                                    <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
+                                    <Card.Text className='mb-4'>
+                                        Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.
+                                    </Card.Text>
+                                    <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
+                                </Card.Body>
+                            </Card>
+                        </Col>
                     </Row>
                 </Container>
             </Container>
