@@ -71,15 +71,13 @@ span {
 .section1{
   background-image: url(./img/curved-pattern.png);
   background-size: 600px 600px;
-  /* background-position: 400px 0; */
   background-size: cover;
   background-repeat: no-repeat;
-  /* -webkit-filter: hue-rotate(800deg) invert(0.4); */
-  /* filter: hue-rotate(800deg) invert(0.4); */
-  /* opacity: 0.1; */
-  /* background-position: center; */
-  /* filter: grayscale(100%); */
 }
-Card{
-  border: none !important;
+.section3{
+  background-image: url(./img/circular-pattern.png);
+  background-size: 600px 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
 }

@@ -68,10 +68,10 @@ const Home = () => {
                             <img src={require('../img/ladies.png')} alt="" className='img-fluid' />
                         </Col>
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-3' style={{ color: '#EECCD8' }}>"My Kolo"</h5>
+                            <h5 className='mb-2' style={{ color: '#EECCD8' }}>"My Kolo"</h5>
                             <h1 className='fw-bold'>A New Way to Save</h1>
                             <p className='my-3 col-md-10 '>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
-                            <div className="d-flex">
+                            <div className="d-flex mt-4">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
                                     Get started with PayBuddy <BsArrowRight />
                                 </Button>
@@ -88,11 +88,11 @@ const Home = () => {
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
 
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-3' style={{ color: '#3BB75E' }}>"Transfa"</h5>
+                            <h5 className='mb-2' style={{ color: '#3BB75E' }}>"Transfa"</h5>
                             <h1 className='fw-bold'>Seamless payments experience</h1>
                             <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
                             {/* <Button>Create free account</Button> */}
-                            <div className="d-flex">
+                            <div className="d-flex mt-4">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
                                     Send money now <BsArrowRight />
                                 </Button>
@@ -107,8 +107,8 @@ const Home = () => {
 
             {/* Section 3 */}
 
-            <Container fluid className='py-5 section3' style={{ backgroundColor: '#EAF6FC' }}>
-                <Container className='p-5'>
+            <Container fluid className='py-5 section3'>
+                <Container className='p-5 rounded rounded-4' style={{ backgroundColor: '#F6F8FF' }}>
                     <h1 className='fw-bold'>Who can use PayBuddy</h1>
                     <p className='col-md-7 my-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure sunt nesciunt corrupti, et omnis assumenda totam magnam. Ut, nobis.</p>
                     <Row className="justify-content-between pt-5">
@@ -117,9 +117,8 @@ const Home = () => {
                                 <Card.Body className='p-4'>
                                     <img src={inter} alt="" className='img-fluid col-5' />
                                     <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
-                                    <Card.Text className='mb-4'>
-                                        Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.
+                                    <Card.Text className='mb-5'>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque sed ipsa accusantium.
                                     </Card.Text>
                                     <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
                                 </Card.Body>
@@ -130,9 +129,8 @@ const Home = () => {
                                 <Card.Body className='p-4'>
                                     <img src={inter} alt="" className='img-fluid col-5' />
                                     <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
-                                    <Card.Text className='mb-4'>
-                                        Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.
+                                    <Card.Text className='mb-5'>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque sed ipsa accusantium.
                                     </Card.Text>
                                     <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
                                 </Card.Body>
@@ -143,9 +141,8 @@ const Home = () => {
                                 <Card.Body className='p-4'>
                                     <img src={inter} alt="" className='img-fluid col-5' />
                                     <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
-                                    <Card.Text className='mb-4'>
-                                        Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.
+                                    <Card.Text className='mb-5'>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque sed ipsa accusantium.
                                     </Card.Text>
                                     <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
                                 </Card.Body>
