@@ -107,8 +107,8 @@ const Home = () => {
 
             {/* Section 3 */}
 
-            <Container fluid className='py-5 section3'>
-                <Container className='p-5 rounded rounded-4' style={{ backgroundColor: '#F6F8FF' }}>
+            <Container fluid className='py-5 section3 bg-light'>
+                <Container className='p-5 rounded rounded-4'>
                     <h1 className='fw-bold'>Who can use PayBuddy</h1>
                     <p className='col-md-7 my-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure sunt nesciunt corrupti, et omnis assumenda totam magnam. Ut, nobis.</p>
                     <Row className="justify-content-between pt-5">
@@ -127,7 +127,7 @@ const Home = () => {
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>
                                 <Card.Body className='p-4'>
-                                    <img src={inter} alt="" className='img-fluid col-5' />
+                                    <img src={entre} alt="" className='img-fluid col-5' />
                                     <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
                                     <Card.Text className='mb-5'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque sed ipsa accusantium.
@@ -139,7 +139,7 @@ const Home = () => {
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>
                                 <Card.Body className='p-4'>
-                                    <img src={inter} alt="" className='img-fluid col-5' />
+                                    <img src={orga} alt="" className='img-fluid col-5' />
                                     <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
                                     <Card.Text className='mb-5'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque sed ipsa accusantium.
