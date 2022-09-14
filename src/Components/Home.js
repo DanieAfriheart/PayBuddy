@@ -9,9 +9,9 @@ import Card from 'react-bootstrap/Card';
 import { BsArrowRight } from "react-icons/bs";
 // images
 import Transfer from "../img/trans.svg";
-import entre from "../img/entrepreneur.svg"
-import inter from "../img/international.svg"
-import orga from "../img/organisation.svg"
+import developer from "../img/developer.jpg"
+import designer from "../img/designer.jpg"
+import creator from "../img/creator.jpg"
 const Home = () => {
 
     const handleNewsletter = () => {
@@ -114,9 +114,9 @@ const Home = () => {
                     <Row className="justify-content-between pt-5">
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>
+                                <Card.Img variant="top" src={developer} className="img-fluid" />
                                 <Card.Body className='p-4'>
-                                    <img src={inter} alt="" className='img-fluid col-5' />
-                                    <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
+                                    <Card.Title className='fw-bold col-md-7 my-4'>Developers</Card.Title>
                                     <Card.Text className='mb-5'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque sed ipsa accusantium.
                                     </Card.Text>
@@ -126,9 +126,9 @@ const Home = () => {
                         </Col>
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>
+                            <Card.Img variant="top" src={designer} className="img-fluid" />
                                 <Card.Body className='p-4'>
-                                    <img src={entre} alt="" className='img-fluid col-5' />
-                                    <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
+                                    <Card.Title className='fw-bold col-md-7 my-4'>Designers</Card.Title>
                                     <Card.Text className='mb-5'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque sed ipsa accusantium.
                                     </Card.Text>
@@ -138,9 +138,9 @@ const Home = () => {
                         </Col>
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>
+                            <Card.Img variant="top" src={creator} className="img-fluid" />
                                 <Card.Body className='p-4'>
-                                    <img src={orga} alt="" className='img-fluid col-5' />
-                                    <Card.Title className='fw-bold col-md-7 my-4'>PayBuddy for <br /> global developers</Card.Title>
+                                    <Card.Title className='fw-bold col-md-7 my-4'>Creators</Card.Title>
                                     <Card.Text className='mb-5'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque sed ipsa accusantium.
                                     </Card.Text>
