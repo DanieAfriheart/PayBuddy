@@ -71,6 +71,19 @@ const Home = () => {
                             <h5 className='mb-2' style={{ color: '#EECCD8' }}>"My Kolo"</h5>
                             <h1 className='fw-bold'>A New Way to Save</h1>
                             <p className='my-3 col-md-10 '>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
+                            <div className='px-0'>
+                                <ul className='px-0'>
+                                    <li>
+                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
+                                    </li>
+                                    <li className='my-1'>
+                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
+                                    </li>
+                                    <li>
+                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
+                                    </li>
+                                </ul>
+                            </div>
                             <div className="d-flex mt-4">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
                                     Get started with PayBuddy <BsArrowRight />
@@ -92,6 +105,19 @@ const Home = () => {
                             <h1 className='fw-bold'>Seamless payments experience</h1>
                             <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
                             {/* <Button>Create free account</Button> */}
+                            <div className='px-0'>
+                                <ul className='px-0'>
+                                    <li>
+                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
+                                    </li>
+                                    <li className='my-1'>
+                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
+                                    </li>
+                                    <li>
+                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
+                                    </li>
+                                </ul>
+                            </div>
                             <div className="d-flex mt-4">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
                                     Send money now <BsArrowRight />
@@ -126,7 +152,7 @@ const Home = () => {
                         </Col>
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>
-                            <Card.Img variant="top" src={designer} className="img-fluid" />
+                                <Card.Img variant="top" src={designer} className="img-fluid" />
                                 <Card.Body className='p-4'>
                                     <Card.Title className='fw-bold col-md-7 my-4'>Designers</Card.Title>
                                     <Card.Text className='mb-5'>
@@ -138,7 +164,7 @@ const Home = () => {
                         </Col>
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>
-                            <Card.Img variant="top" src={creator} className="img-fluid" />
+                                <Card.Img variant="top" src={creator} className="img-fluid" />
                                 <Card.Body className='p-4'>
                                     <Card.Title className='fw-bold col-md-7 my-4'>Creators</Card.Title>
                                     <Card.Text className='mb-5'>
