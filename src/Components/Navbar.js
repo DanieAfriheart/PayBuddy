@@ -7,7 +7,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 // Images
 // import PayBuddy from "../img/PayBuddy.png" 
 
+// Icons
+import { BsArrowRight } from "react-icons/bs";
+
+
 function CollapsibleExample() {
+
+    const handleHover = () => {
+        // alert("gbemidebe")
+        document.getElementById('collasible-nav-dropdown').click()
+    }
 
     return (
         <Navbar fixed='top' className='shadow-sm' collapseOnSelect expand="lg" bg="" variant="light" style={{ backgroundColor: '#FFFFFF' }}>
@@ -16,16 +25,14 @@ function CollapsibleExample() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className='ms-auto'>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
+                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown" onMouseEnter={handleHover}>
+                            <NavDropdown.Item href="#action/3.1"><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Action</NavDropdown.Item>
+                            {/* <NavDropdown.Item href="#action/3.2"><BsArrowRight className='border rounded-circle p-1 border-success text-success' />
                                 Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            </NavDropdown.Item> */}
+                            <NavDropdown.Item href="#action/3.3"><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Something</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
+                            <NavDropdown.Item href="#action/3.4"><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Separated  Link
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#deets" className='me-3'>Login</Nav.Link>
