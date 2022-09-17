@@ -71,20 +71,7 @@ const Home = () => {
                             <h5 className='mb-2' style={{ color: '#EECCD8' }}>"My Kolo"</h5>
                             <h1 className='fw-bold'>A New Way to Save</h1>
                             <p className='my-3 col-md-10 '>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
-                            <div className='px-0'>
-                                <ul className='px-0'>
-                                    <li>
-                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
-                                    </li>
-                                    <li className='my-1'>
-                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
-                                    </li>
-                                    <li>
-                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="d-flex mt-4">
+                            <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
                                     Get started with PayBuddy <BsArrowRight />
                                 </Button>
@@ -106,17 +93,40 @@ const Home = () => {
                             <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
                             {/* <Button>Create free account</Button> */}
                             <div className='px-0'>
-                                <ul className='px-0'>
-                                    <li>
-                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
-                                    </li>
-                                    <li className='my-1'>
-                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
-                                    </li>
-                                    <li>
-                                        <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Learn more</Card.Link>
-                                    </li>
-                                </ul>
+                                <Row>
+                                    <Col>
+                                        <ul className='px-0'>
+                                            <li>
+                                                <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Card</Card.Link>
+                                            </li>
+                                            <li className='my-1'>
+                                                <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Bank Account</Card.Link>
+                                            </li>
+                                            <li>
+                                                <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Bank Transfer</Card.Link>
+                                            </li>
+                                            <li>
+                                                <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> USSD</Card.Link>
+                                            </li>
+                                        </ul>
+                                    </Col>
+                                    <Col>
+                                        <ul className='px-0'>
+                                            <li>
+                                                <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Apple Pay</Card.Link>
+                                            </li>
+                                            <li className='my-1'>
+                                                <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Visa QR</Card.Link>
+                                            </li>
+                                            <li>
+                                                <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Mobile Money</Card.Link>
+                                            </li>
+                                            <li>
+                                                <Card.Link href="#" style={{ textDecoration: 'none', color: 'black' }}><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> POS</Card.Link>
+                                            </li>
+                                        </ul>
+                                    </Col>
+                                </Row>
                             </div>
                             <div className="d-flex mt-4">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
