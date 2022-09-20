@@ -7,8 +7,11 @@ import Card from 'react-bootstrap/Card';
 // Icon
 // import { FcRight } from "react-icons/fc";
 import { BsArrowRight } from "react-icons/bs";
+import { FcHighPriority } from "react-icons/fc";
 // images
-import Transfer from "../img/trans.svg";
+import Arm from "../img/ARM.cf099987.svg";
+import Mono from "../img/Mono.bc5aaf90.svg";
+import Paystack from "../img/Paystack.0a3649f0.svg";
 import developer from "../img/developer.jpg"
 import designer from "../img/designer.jpg"
 import creator from "../img/creator.jpg"
@@ -18,17 +21,50 @@ const Home = () => {
         alert('gbemidebe');
     }
 
+    window.onload = function () {
+        setTimeout(() => {
+            document.getElementById('myModal').click()
+        }, 5000);
+    }
+
     return (
         <>
             <Container fluid className='py-5 mt-5 d-flex align-items-center hero' >
                 <Container className='h-100'>
+                    {/* Modal */}
+                    {/* <!-- Button trigger modal --> */}
+                    <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal" id='myModal'>
+                        Launch demo modal
+                    </button>
+
+                    {/* <!-- Modal --> */}
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel" className='text-danger d-flex align-items-center'><FcHighPriority /> Attention!!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p className="text-small">This is a demo website for portfolio content, not a real financial institution</p>
+                                </div>
+                                {/* <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div> */}
+                            </div>
+                        </div>
+                    </div>
+
+
                     <Row className='py-5 d-flex flex-row align-items-center justify-content-between h-100'>
                         <Col md={6}>
                             <div className="header">
+                                {/* <p className="text-small">This is a demo website for portfolio content, not a real financial institution</p> */}
                                 <h1 className='fw-bold col-md-10'>A special credit card made for Developers.</h1>
-                                <p className='my-4 mx-auto '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
+                                <p className='my-4 mx-auto lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
                             </div>
-                            <Form className="d-flex border rounded p-1 mx-auto mb-5">
+                            {/* <Form className="d-flex border rounded p-1 mx-auto mb-5">
                                 <Form.Control
                                     type="Input"
                                     placeholder="Subscribe to our newsletter"
@@ -37,19 +73,11 @@ const Home = () => {
                                     style={{ border: 'none', backgroundColor: 'none' }}
                                 />
                                 <Button variant="dark" className='Btn' onClick={handleNewsletter}>Subscribe</Button>
-                            </Form>
-                            <Row md={6}>
-                                <Col md={3} className='d-flex align-items-center'>
-                                    <p className=" fw-bold fs-3 me-2">100+</p>
-                                    <p>Cards <br /> Delivered</p>
-                                </Col>
-                                <Col className='d-flex align-items-center text-center d-flex justify-content-center'>
-                                    <img className='img-fluid' src={require('../img/scribble.png')} alt="" />
-                                </Col>
-                                <Col md={3} className='d-flex align-items-center'>
-                                    <p className=" fw-bold fs-3 me-2">$10M+</p>
-                                    <p>Transactions <br /> Completed</p>
-                                </Col>
+                            </Form> */}
+                            <Row className='col-12 justify-content-between'>
+                              <Col className='img-fluid col-3'><img src={Paystack} alt="" /></Col>
+                              <Col className='img-fluid col-3'><img src={Mono} alt="" /></Col>
+                              <Col className='img-fluid col-3'><img src={Arm} alt="" /></Col>
                             </Row>
                         </Col>
                         <Col md={6}>
@@ -61,7 +89,7 @@ const Home = () => {
 
             {/* Section 1 */}
 
-            <Container fluid className='py-5 section1'>
+            <Container fluid className='py-5 section1 px-0'>
                 <Container className='bgCustom p-5 rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
                         <Col md={6}>
@@ -83,7 +111,7 @@ const Home = () => {
 
             {/* Section 2 */}
 
-            <Container fluid className='py-5 section2'>
+            <Container fluid className='py-5 section2 px-0'>
                 <Container className='px-5 rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
 
@@ -143,11 +171,11 @@ const Home = () => {
 
             {/* Section 3 */}
 
-            <Container fluid className='py-5 section3 bg-light'>
+            <Container fluid className='py-5 section3 bg-light px-0'>
                 <Container className='p-5 rounded rounded-4'>
                     <h1 className='fw-bold'>Who can use PayBuddy</h1>
                     <p className='col-md-7 my-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure sunt nesciunt corrupti, et omnis assumenda totam magnam. Ut, nobis.</p>
-                    <Row className="justify-content-between pt-5">
+                    <Row className="justify-content-between pt-5 gy-4">
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>
                                 <Card.Img variant="top" src={developer} className="img-fluid" />

@@ -9,11 +9,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 // Icons
 import { BsArrowRight } from "react-icons/bs";
+import { FcLineChart, FcGenealogy, FcSurvey } from "react-icons/fc";
 
 
 function CollapsibleExample() {
 
     const handleHover = () => {
+        // alert("gbemidebe")
+        document.getElementById('collasible-nav-dropdown').click()
+    }
+    const handleMouseLeave = () => {
         // alert("gbemidebe")
         document.getElementById('collasible-nav-dropdown').click()
     }
@@ -25,14 +30,14 @@ function CollapsibleExample() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className='ms-auto'>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown" onMouseEnter={handleHover}>
-                            <NavDropdown.Item href="#action/3.1"><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Action</NavDropdown.Item>
+                        <NavDropdown title="Why PayBuddy" id="collasible-nav-dropdown" onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
+                            <NavDropdown.Item href="#action/3.1"><FcSurvey style={{fontSize:'1.5em'}} /> Why choose PayBuddy</NavDropdown.Item>
                             {/* <NavDropdown.Item href="#action/3.2"><BsArrowRight className='border rounded-circle p-1 border-success text-success' />
                                 Another action
                             </NavDropdown.Item> */}
-                            <NavDropdown.Item href="#action/3.3"><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Something</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3"><FcLineChart style={{fontSize:'1.5em'}} /> Success rate</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4"><BsArrowRight className='border rounded-circle p-1 border-success text-success' /> Separated  Link
+                            <NavDropdown.Item href="#action/3.4"><FcGenealogy style={{fontSize:'1.5em'}} /> Demo
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#deets" className='me-3'>Login</Nav.Link>
