@@ -87,3 +87,8 @@ span {
 .border-success{
   background-color: #F1FEF4;
 }
+.sect3{
+  background-image: url(./img/entrepreneour.jpg);
+  background-size: cover;
+  background-position: center;
+}

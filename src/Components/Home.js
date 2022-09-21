@@ -122,34 +122,24 @@ const Home = () => {
 
 
 
-            <Container fluid className='py-5 section1 px-0' style={{ backgroundColor: '#FDFBF9' }}>
+            {/* <Container fluid className='py-5 section1 px-0 sect3' style={{ backgroundColor: '#FDFBF9', height:'80vh' }}>
                 <Container>
-                    <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
-                        <Col md={6}>
-                            <img src={require('../img/ladies.png')} alt="" className='img-fluid' />
-                        </Col>
-                        <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-2' style={{ color: '#F2761B' }}>"My Kolo"</h5>
-                            <h1 className=''>A New Way to Save</h1>
-                            <p className='my-3 col-md-10 lead'>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
-                            <div className="d-flex">
-                                <Button variant="transparent" className='text-small px-0 border-0'>
-                                    Learn more <BsArrowRight />
-                                </Button>
-                            </div>
-                        </Col>
-                    </Row>
+                    <div className='text-center'> 
+                        <h5 className='mb-2' style={{ color: '#3BB75E' }}>"Transfa"</h5>
+                        <h1 className=''>Seamless payments experience</h1>
+                        <p className='my-3 col-md-10 mx-auto lead'>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
+                    </div>
                 </Container>
-            </Container>
+            </Container> */}
 
             {/* Section 2 */}
 
-            <Container fluid className='py-5 section2 px-0'>
+            <Container fluid className='py-5 section2 px-0 mb-3' style={{backgroundColor: '#F3F3EE'}}>
                 <Container className='px-5 rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
 
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-2' style={{ color: '#3BB75E' }}>"Transfa"</h5>
+                            <h5 className='mb-2' style={{ color: '#F2761B' }}>"Transfa"</h5>
                             <h1 className=''>Seamless payments experience</h1>
                             <p className='my-3 col-md-10 lead'>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
                             {/* <Button>Create free account</Button> */}
@@ -196,7 +186,7 @@ const Home = () => {
                             </div>
                         </Col>
                         <Col md={6}>
-                            <img src={require('../img/map.jpg')} alt="" className='img-fluid' />
+                            <img src={require('../img/home.gif')} alt="" className='img-fluid' />
                         </Col>
                     </Row>
                 </Container>
