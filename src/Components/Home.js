@@ -61,8 +61,8 @@ const Home = () => {
                         <Col md={6}>
                             <div className="header">
                                 {/* <p className="text-small">This is a demo website for portfolio content, not a real financial institution</p> */}
-                                <h1 className='fw-bold col-md-10'>A special credit card made for Developers.</h1>
-                                <p className='my-4 mx-auto lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
+                                <h1 className='fw-bold col-md-10 display-3'>Credit card for Developers.</h1>
+                                <p className='my-4 mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
                             </div>
                             {/* <Form className="d-flex border rounded p-1 mx-auto mb-5">
                                 <Form.Control
@@ -75,9 +75,9 @@ const Home = () => {
                                 <Button variant="dark" className='Btn' onClick={handleNewsletter}>Subscribe</Button>
                             </Form> */}
                             <Row className='col-12 justify-content-between'>
-                              <Col className='img-fluid col-3'><img src={Paystack} alt="" /></Col>
-                              <Col className='img-fluid col-3'><img src={Mono} alt="" /></Col>
-                              <Col className='img-fluid col-3'><img src={Arm} alt="" /></Col>
+                                <Col className='img-fluid col-3'><img src={Paystack} alt="" /></Col>
+                                <Col className='img-fluid col-3'><img src={Mono} alt="" /></Col>
+                                <Col className='img-fluid col-3'><img src={Arm} alt="" /></Col>
                             </Row>
                         </Col>
                         <Col md={6}>
@@ -89,16 +89,72 @@ const Home = () => {
 
             {/* Section 1 */}
 
-            <Container fluid className='py-5 section1 px-0'>
-                <Container className='bgCustom p-5 rounded rounded-4'>
+            <Row className='h-100 mb-3'>
+                <Col md={6} className='p-5' style={{backgroundColor: '#F5F5FF'}}>
+                    <Container className='ps-5'>
+                        <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
+                        <h1 className='my-3'>A New Way to Save</h1>
+                        <div className="d-flex">
+                            <Button variant="transparent" className='text-small px-0 border-0'>
+                                Get started with PayBuddy <BsArrowRight />
+                            </Button>
+                        </div>
+                        <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
+                    </Container>
+                </Col>
+                <Col md={6} className='p-5' style={{backgroundColor: '#FDFBF9'}}>
+                    <Container className='ps-5'>
+                        <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
+                        <h1 className='my-3'>A New Way to Save</h1>
+                        <div className="d-flex">
+                            <Button variant="transparent" className='text-small px-0 border-0'>
+                                Get started with PayBuddy <BsArrowRight />
+                            </Button>
+                        </div>
+                        <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
+                    </Container>
+                </Col>
+            </Row>
+
+            {/* Section 1 */}
+
+            <Row className='h-100'>
+                <Col md={6} className='p-5' style={{backgroundColor: '#F6F8FF'}}>
+                    <Container className='ps-5'>
+                        <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
+                        <h1 className='my-3'>A New Way to Save</h1>
+                        <div className="d-flex">
+                            <Button variant="transparent" className='text-small px-0 border-0'>
+                                Get started with PayBuddy <BsArrowRight />
+                            </Button>
+                        </div>
+                        <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
+                    </Container>
+                </Col>
+                <Col md={6} className='p-5' style={{backgroundColor: '#F5F5FF'}}>
+                    <Container className='ps-5'>
+                        <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
+                        <h1 className='my-3'>A New Way to Save</h1>
+                        <div className="d-flex">
+                            <Button variant="transparent" className='text-small px-0 border-0'>
+                                Get started with PayBuddy <BsArrowRight />
+                            </Button>
+                        </div>
+                        <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
+                    </Container>
+                </Col>
+            </Row>
+
+            <Container fluid className='py-5 section1 px-0' style={{ backgroundColor: '#FDFBF9' }}>
+                <Container>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
                         <Col md={6}>
                             <img src={require('../img/ladies.png')} alt="" className='img-fluid' />
                         </Col>
                         <Col md={5} className='justify-content-center d-flex flex-column'>
-                            <h5 className='mb-2' style={{ color: '#EECCD8' }}>"My Kolo"</h5>
-                            <h1 className='fw-bold'>A New Way to Save</h1>
-                            <p className='my-3 col-md-10 '>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
+                            <h5 className='mb-2' style={{ color: '#F2761B' }}>"My Kolo"</h5>
+                            <h1 className=''>A New Way to Save</h1>
+                            <p className='my-3 col-md-10 lead'>Save a small percentage from your bank account every time you spend or earn money, from any bank account.</p>
                             <div className="d-flex">
                                 <Button variant="transparent" className='text-small px-0 border-0'>
                                     Get started with PayBuddy <BsArrowRight />
@@ -117,8 +173,8 @@ const Home = () => {
 
                         <Col md={5} className='justify-content-center d-flex flex-column'>
                             <h5 className='mb-2' style={{ color: '#3BB75E' }}>"Transfa"</h5>
-                            <h1 className='fw-bold'>Seamless payments experience</h1>
-                            <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
+                            <h1 className=''>Seamless payments experience</h1>
+                            <p className='my-3 col-md-10 lead'>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
                             {/* <Button>Create free account</Button> */}
                             <div className='px-0'>
                                 <Row>
@@ -171,9 +227,9 @@ const Home = () => {
 
             {/* Section 3 */}
 
-            <Container fluid className='py-5 section3 bg-light px-0'>
+            <Container fluid className='py-5 section3 px-0' style={{ backgroundColor: '#F5F5FF' }}>
                 <Container className='p-5 rounded rounded-4'>
-                    <h1 className='fw-bold'>Who can use PayBuddy</h1>
+                    <h1 className=''>Who can use PayBuddy</h1>
                     <p className='col-md-7 my-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure sunt nesciunt corrupti, et omnis assumenda totam magnam. Ut, nobis.</p>
                     <Row className="justify-content-between pt-5 gy-4">
                         <Col md={4}>

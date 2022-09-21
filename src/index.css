@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   outline: 1px solid gold;
 }
 
@@ -61,7 +61,7 @@ background-color: #FFFFFF !important;
 .bgCustom {
   /* background-color: rgba(161, 209, 255, 20%); */
   /* background-color: rgb(245, 245, 255); */
-  background-color: #F7F4FD;
+  background-color: #FCF8FF;
 }
 
 input {
