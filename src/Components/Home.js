@@ -62,7 +62,7 @@ const Home = () => {
                             <div className="header">
                                 {/* <p className="text-small">This is a demo website for portfolio content, not a real financial institution</p> */}
                                 <h1 className='fw-bold col-md-10 display-3'>Credit card for Developers.</h1>
-                                <p className='my-4 mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
+                                <p className='my-4 mx-auto lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
                             </div>
                             {/* <Form className="d-flex border rounded p-1 mx-auto mb-5">
                                 <Form.Control
@@ -88,62 +88,65 @@ const Home = () => {
             </Container>
 
             {/* Section 1 */}
-
-            <Row className='h-100 mb-3'>
-                <Col md={6} className='p-5' style={{backgroundColor: '#F5F5FF'}}>
-                    <Container className='ps-5'>
-                        <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
-                        <h1 className='my-3'>A New Way to Save</h1>
-                        <div className="d-flex">
-                            <Button variant="transparent" className='text-small px-0 border-0'>
-                                Get started with PayBuddy <BsArrowRight />
-                            </Button>
-                        </div>
-                        <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
-                    </Container>
-                </Col>
-                <Col md={6} className='p-5' style={{backgroundColor: '#FDFBF9'}}>
-                    <Container className='ps-5'>
-                        <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
-                        <h1 className='my-3'>A New Way to Save</h1>
-                        <div className="d-flex">
-                            <Button variant="transparent" className='text-small px-0 border-0'>
-                                Get started with PayBuddy <BsArrowRight />
-                            </Button>
-                        </div>
-                        <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
-                    </Container>
-                </Col>
-            </Row>
+            <Container fluid className='px-4'>
+                <Row className='h-100 mb-3'>
+                    <Col md={6} className='p-5' style={{ backgroundColor: '#F5F5FF' }}>
+                        <Container className='ps-5'>
+                            <h5 style={{ color: '#7000FF' }}>"My Kolo"</h5>
+                            <h1 className='my-3'>A New Way <br /> to Save</h1>
+                            <div className="d-flex">
+                                <Button variant="transparent" className='text-small px-0 border-0'>
+                                    Get started with PayBuddy <BsArrowRight />
+                                </Button>
+                            </div>
+                            <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
+                        </Container>
+                    </Col>
+                    <Col md={6} className='p-5' style={{ backgroundColor: '#FDFBF9' }}>
+                        <Container className='ps-5'>
+                            <h5 style={{ color: '#F2761B' }}>"Transfa"</h5>
+                            <h1 className='my-3'>Give With <br /> Love ❤️</h1>
+                            <div className="d-flex">
+                                <Button variant="transparent" className='text-small px-0 border-0'>
+                                    Get started with PayBuddy <BsArrowRight />
+                                </Button>
+                            </div>
+                            <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
+                        </Container>
+                    </Col>
+                </Row>
+            </Container>
 
             {/* Section 1 */}
+            <Container fluid className='px-4'>
 
-            <Row className='h-100'>
-                <Col md={6} className='p-5' style={{backgroundColor: '#F6F8FF'}}>
-                    <Container className='ps-5'>
-                        <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
-                        <h1 className='my-3'>A New Way to Save</h1>
-                        <div className="d-flex">
-                            <Button variant="transparent" className='text-small px-0 border-0'>
-                                Get started with PayBuddy <BsArrowRight />
-                            </Button>
-                        </div>
-                        <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
-                    </Container>
-                </Col>
-                <Col md={6} className='p-5' style={{backgroundColor: '#F5F5FF'}}>
-                    <Container className='ps-5'>
-                        <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
-                        <h1 className='my-3'>A New Way to Save</h1>
-                        <div className="d-flex">
-                            <Button variant="transparent" className='text-small px-0 border-0'>
-                                Get started with PayBuddy <BsArrowRight />
-                            </Button>
-                        </div>
-                        <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
-                    </Container>
-                </Col>
-            </Row>
+                <Row className='h-100' gx={5}>
+                    <Col md={6} className='p-5' style={{ backgroundColor: '#F6F8FF' }}>
+                        <Container className='ps-5'>
+                            <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
+                            <h1 className='my-3'>A New Way to Save</h1>
+                            <div className="d-flex">
+                                <Button variant="transparent" className='text-small px-0 border-0'>
+                                    Get started with PayBuddy <BsArrowRight />
+                                </Button>
+                            </div>
+                            <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
+                        </Container>
+                    </Col>
+                    <Col md={6} className='p-5' style={{ backgroundColor: '#F5F5FF' }}>
+                        <Container className='ps-5'>
+                            <h5 style={{ color: '#F2761B' }}>"My Kolo"</h5>
+                            <h1 className='my-3'>A New Way to Save</h1>
+                            <div className="d-flex">
+                                <Button variant="transparent" className='text-small px-0 border-0'>
+                                    Get started with PayBuddy <BsArrowRight />
+                                </Button>
+                            </div>
+                            <img src={require('../img/ladies.png')} alt="" className='img-fluid mt-5' />
+                        </Container>
+                    </Col>
+                </Row>
+            </Container>
 
             <Container fluid className='py-5 section1 px-0' style={{ backgroundColor: '#FDFBF9' }}>
                 <Container>
