@@ -8,15 +8,16 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function OffcanvasExample() {
     const handleHover = () => {
-        document.getElementById('dropdown').click()
+        // document.getElementById('dropdown').click()
+        document.getElementById(`dropdown`).click()
     }
 
     return (
         <>
             {['md'].map((expand) => (
-                <Navbar key={expand} bg="light" expand={expand} className="mb-3" fixed='top'>
+                <Navbar key={expand} bg="light" expand={expand} className="mb-3 shadow" fixed='top'>
                     <Container>
-                        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+                        <Navbar.Brand href="#" className='fw-bold'>PayBuddy</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
@@ -35,7 +36,6 @@ function OffcanvasExample() {
                                     <NavDropdown
                                         title="Dropdown"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
-                                        id='dropdown'
                                         onMouseEnter={handleHover}
                                     >
                                         <NavDropdown.Item href="#action3"><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
@@ -62,15 +62,15 @@ function OffcanvasExample() {
                                         </NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav>
-                                <Form className="d-flex">
+                                {/* <Form className="d-flex">
                                     <Form.Control
                                         type="search"
                                         placeholder="Search"
                                         className="me-2"
                                         aria-label="Search"
                                     />
-                                    <Button variant="outline-success">Search</Button>
-                                </Form>
+                                </Form> */}
+                                    <Button variant="dark">Create a free acount</Button>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
                     </Container>
