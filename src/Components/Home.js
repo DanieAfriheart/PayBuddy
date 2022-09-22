@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 // Icon
 // import { FcRight } from "react-icons/fc";
@@ -12,7 +12,7 @@ import { FcHighPriority } from "react-icons/fc";
 import Arm from "../img/ARM.cf099987.svg";
 import Mono from "../img/Mono.bc5aaf90.svg";
 import Paystack from "../img/Paystack.0a3649f0.svg";
-import Transfer from "../img/trans.svg";
+// import Transfer from "../img/trans.svg";
 import developer from "../img/developer.jpg"
 import designer from "../img/designer.jpg"
 import creator from "../img/creator.jpg"

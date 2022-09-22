@@ -1,54 +1,84 @@
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-// import { IconName } from "react-icons/fc";
-// Images
-// import PayBuddy from "../img/PayBuddy.png" 
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
-// Icons
-import { BsArrowRight } from "react-icons/bs";
-import { FcLineChart, FcGenealogy, FcSurvey } from "react-icons/fc";
-
-
-function CollapsibleExample() {
-
+function OffcanvasExample() {
     const handleHover = () => {
-        // alert("gbemidebe")
-        document.getElementById('collasible-nav-dropdown').click()
-    }
-    const handleMouseLeave = () => {
-        // alert("gbemidebe")
-        document.getElementById('collasible-nav-dropdown').click()
+        document.getElementById('dropdown').click()
     }
 
     return (
-        <Navbar fixed='top' className='shadow-sm' collapseOnSelect expand="lg" bg="" variant="light" style={{ backgroundColor: '#FFFFFF' }}>
-            <Container>
-                <Navbar.Brand href="#home" className='fw-bold'>PayBuddy</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className='ms-auto'>
-                        <NavDropdown title="Why PayBuddy" id="collasible-nav-dropdown" onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
-                            <NavDropdown.Item href="#action/3.1"><FcSurvey style={{fontSize:'1.5em'}} /> Why choose PayBuddy</NavDropdown.Item>
-                            {/* <NavDropdown.Item href="#action/3.2"><BsArrowRight className='border rounded-circle p-1 border-success text-success' />
-                                Another action
-                            </NavDropdown.Item> */}
-                            <NavDropdown.Item href="#action/3.3"><FcLineChart style={{fontSize:'1.5em'}} /> Success rate</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4"><FcGenealogy style={{fontSize:'1.5em'}} /> Demo
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="#deets" className='me-3'>Login</Nav.Link>
-                        <Button variant="dark" className='Btn'>
-                            Create free account
-                        </Button>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <>
+            {['md'].map((expand) => (
+                <Navbar key={expand} bg="light" expand={expand} className="mb-3" fixed='top'>
+                    <Container>
+                        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                        <Navbar.Offcanvas
+                            id={`offcanvasNavbar-expand-${expand}`}
+                            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                            placement="end"
+                        >
+                            <Offcanvas.Header closeButton>
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                                    Offcanvas
+                                </Offcanvas.Title>
+                            </Offcanvas.Header>
+                            <Offcanvas.Body>
+                                <Nav className="justify-content-end flex-grow-1 pe-3">
+                                    <Nav.Link href="#action1">Home</Nav.Link>
+                                    <Nav.Link href="#action2">Link</Nav.Link>
+                                    <NavDropdown
+                                        title="Dropdown"
+                                        id={`offcanvasNavbarDropdown-expand-${expand}`}
+                                        id='dropdown'
+                                        onMouseEnter={handleHover}
+                                    >
+                                        <NavDropdown.Item href="#action3"><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                            <span class="d-inline-block bg-success rounded-circle p-1"></span>
+                                            Action
+                                        </a></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action4">
+                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                                <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+                                                Another Action
+                                            </a>
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item href="#action4">
+                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                                <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+                                                Something else here
+                                            </a>
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item href="#action4">
+                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                                <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                                                Seperated link
+                                            </a>
+                                        </NavDropdown.Item>
+                                    </NavDropdown>
+                                </Nav>
+                                <Form className="d-flex">
+                                    <Form.Control
+                                        type="search"
+                                        placeholder="Search"
+                                        className="me-2"
+                                        aria-label="Search"
+                                    />
+                                    <Button variant="outline-success">Search</Button>
+                                </Form>
+                            </Offcanvas.Body>
+                        </Navbar.Offcanvas>
+                    </Container>
+                </Navbar>
+            ))
+            }
+        </>
     );
 }
 
-export default CollapsibleExample;
+export default OffcanvasExample;
