@@ -16,11 +16,13 @@ import Paystack from "../img/Paystack.0a3649f0.svg";
 import developer from "../img/developer.jpg"
 import designer from "../img/designer.jpg"
 import creator from "../img/creator.jpg"
+import { useEffect } from 'react';
+import { useState } from 'react';
 const Home = () => {
-
-    const handleNewsletter = () => {
-        alert('gbemidebe');
-    }
+    //  const[mod,setMod]=useState("")
+    // useEffect(()=>{
+     
+    // },[])
 
     window.onload = function () {
         setTimeout(() => {
@@ -62,8 +64,8 @@ const Home = () => {
                         <Col md={6}>
                             <div className="header">
                                 {/* <p className="text-small">This is a demo website for portfolio content, not a real financial institution</p> */}
-                                <h1 className='col-md-10 display-4'>Credit card for Developers.</h1>
-                                <p className='my-4 mx-auto lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
+                                <h1 className='col-md-10 display-4 fw-bold'>Credit card for Developers.</h1>
+                                <p className='my-4 col-md-10 lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
                             </div>
                             {/* <Form className="d-flex border rounded p-1 mx-auto mb-5">
                                 <Form.Control
@@ -104,7 +106,7 @@ const Home = () => {
                         </Container>
                     </Col>
                     <Col md={6} className='p-5' style={{ backgroundColor: '#FDFBF9' }}>
-                        <Container className='ps-5'>
+                        <Container className='pe-5'>
                             <h5 style={{ color: '#F2761B' }}>"UseForms"</h5>
                             <h1 className='my-3'>Ask for payment <br /> from anywhere</h1>
                             <div className="d-flex">
@@ -118,30 +120,16 @@ const Home = () => {
                 </Row>
             </Container>
 
-
-
-
-
-            {/* <Container fluid className='py-5 section1 px-0 sect3' style={{ backgroundColor: '#FDFBF9', height:'80vh' }}>
-                <Container>
-                    <div className='text-center'> 
-                        <h5 className='mb-2' style={{ color: '#3BB75E' }}>"Transfa"</h5>
-                        <h1 className=''>Seamless payments experience</h1>
-                        <p className='my-3 col-md-10 mx-auto lead'>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
-                    </div>
-                </Container>
-            </Container> */}
-
             {/* Section 2 */}
 
             <Container fluid className='py-5 section2 px-0 mb-3' style={{backgroundColor: '#F3F3EE'}}>
-                <Container className='px-5 rounded rounded-4'>
+                <Container className='rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
 
                         <Col md={5} className='justify-content-center d-flex flex-column'>
                             <h5 className='mb-2' style={{ color: '#F2761B' }}>"Transfa"</h5>
                             <h1 className=''>Seamless payments experience</h1>
-                            <p className='my-3 col-md-10 lead'>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
+                            <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
                             {/* <Button>Create free account</Button> */}
                             <div className='px-0'>
                                 <Row>
@@ -195,9 +183,9 @@ const Home = () => {
             {/* Section 3 */}
 
             <Container fluid className='py-5 section3 px-0' style={{ backgroundColor: '#F5F5FF' }}>
-                <Container className='p-5 rounded rounded-4'>
+                <Container className='rounded rounded-4'>
                     <h1 className=''>Who can use PayBuddy</h1>
-                    <p className='col-md-7 my-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure sunt nesciunt corrupti, et omnis assumenda totam magnam. Ut, nobis.</p>
+                    <p className='col-md-5 my-3 '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure sunt nesciunt corrupti, et omnis assumenda totam magnam. Ut, nobis.</p>
                     <Row className="justify-content-between pt-5 gy-4">
                         <Col md={4}>
                             <Card style={{ width: '100%' }}>

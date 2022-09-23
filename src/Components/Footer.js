@@ -14,66 +14,115 @@ const Footer = () => {
             <Container fluid>
                 <Container>
                     <div classNameName="footer py-5">
-                        <Row>
+                        <Row className='justify-content-between'>
                             <Col md={2} classNameName='col-6 mb-3'>
-                                <h5>Section</h5>
+                                <h5>Why PayBuddy</h5>
                                 <ul className="nav flex-column">
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Whychoose PayBuddy</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Success Rate</a></li><br />
+
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">For entrepreneurs</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">For corporates</a></li><br />
+
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">For International Companies</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">For Startups</a></li>
+
                                 </ul>
                             </Col>
 
                             <Col md={2} classNameName='col-6 mb-3'>
-                                <h5>Section</h5>
+                                <h5>Pricing</h5>
                                 <ul className="nav flex-column">
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Nigeria</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Ghana</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">South Africa</a></li>
+                                </ul><br />
+                                <h5>Customers</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Testimonials</a></li>
+                                </ul>
+                                <h5>Learn</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Blog</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Guides</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Video Tutorials</a></li>
                                 </ul>
                             </Col>
 
                             <Col md={2} classNameName='col-6 mb-3'>
-                                <h5>Section</h5>
+                                <h5>Developer</h5>
                                 <ul className="nav flex-column">
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Overview</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Documentation</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Integration</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Status Page</a></li>
+                                </ul><br />
+                                <h5>Community</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Nigeria Lagos</a></li>
+                                </ul><br />
+                                <h5>Support</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Help Desk</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Contact Us</a></li>
                                 </ul>
                             </Col>
 
-                            <Col md={5} classNameName='offset-md-1 mb-3'>
-                                <Form>
-                                    <h5>Subscribe to our newsletter</h5>
-                                    <p>Monthly digest of what's new and exciting from us.</p>
-                                    <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                                        <label for="newsletter1" className="visually-hidden">Email address</label>
-                                        <Form.Control
-                                            type="Input"
-                                            placeholder="Email address"
-                                            // classNameName="me-2"
-                                            aria-label="Search"
-                                        // style={{ border: 'none', backgroundColor: 'none' }}
-                                        />
-                                        {/* <input id="newsletter1" type="text" className="form-control" placeholder="Email address"> */}
-                                        <button className="btn btn-primary" type="button">Subscribe</button>
-                                    </div>
-                                </Form>
+                            <Col md={2} classNameName='col-6 mb-3'>
+                                <h5>About</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Company</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Subscribe</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Compliance</a></li>
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Careers</a></li>
+                                </ul>
+                            </Col>
+                        </Row>
+                        <Row className='justify-content-between mt-5'>
+                            <Col md={2} classNameName='col-6 mb-3'>
+                                <h5>Contact</h5>
+                                <ul className="nav">
+                                    <a href="#" className='text-small'> esuoladaniel002@gmail.com</a>
+                                    <li className="ms-3"><a className="link-dark fs-4" href="#"><TbBrandMeta /></a></li>
+                                    <li className="ms-3"><a className="link-dark fs-4" href="#"><TbBrandInstagram /></a></li>
+                                    <li className="ms-3"><a className="link-dark fs-4" href="#"><TbBrandTwitter /></a></li>
+                                </ul>
+                            </Col>
+
+                            <Col md={2} classNameName='col-6 mb-3'>
+                                <h5>Lagos</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, saepe enim temporibus quisquam id tempore.</a></li>
+                                </ul><br />
+                                <h5>Accra</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, laboriosam.</a></li>
+                                </ul>
+                            </Col>
+
+                            <Col md={2} classNameName='col-6 mb-3'>
+                                <h5>San Francisco</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Lorem ipsum dolor sit amet.</a></li>
+                                </ul><br />
+                                <h5>Dubai</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum ad ipsa dolore! Illum, beatae!</a></li>
+                                </ul>
+                            </Col>
+
+                            <Col md={2} classNameName='col-6 mb-3'>
+                                <h5>Capetown</h5>
+                                <ul className="nav flex-column">
+                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quo necessitatibus quisquam ratione nihil error in beatae sunt deserunt vel.</a></li>
+                                </ul>
                             </Col>
                         </Row>
                     </div>
                     <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                         <p>&copy; 2022 Company, Inc. All rights reserved.</p>
                         <ul className="list-unstyled d-flex">
-                            <li className="ms-3"><a className="link-dark fs-4" href="#"><TbBrandMeta /></a></li>
-                            <li className="ms-3"><a className="link-dark fs-4" href="#"><TbBrandInstagram /></a></li>
-                            <li className="ms-3"><a className="link-dark fs-4" href="#"><TbBrandTwitter /></a></li>
+
                         </ul>
                     </div>
                 </Container>

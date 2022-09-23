@@ -1,16 +1,17 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import {Link, useNavigate} from "react-router-dom"
 
 function OffcanvasExample() {
-    const handleHover = () => {
-        // document.getElementById('dropdown').click()
-        document.getElementById(`dropdown`).click()
-    }
+    const nav = useNavigate();
+    // const handleSignUp = () => {
+    //     console.log('hello');
+    //     nav('/dggd')
+    //     // window.location.href = "../"
+    // }
 
     return (
         <>
@@ -25,52 +26,37 @@ function OffcanvasExample() {
                             placement="end"
                         >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    Offcanvas
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className='fw-bold'>
+                                    PayBuddy
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link href="#action1">Home</Nav.Link>
-                                    <Nav.Link href="#action2">Link</Nav.Link>
+
                                     <NavDropdown
-                                        title="Dropdown"
+                                        title="Why Paybuddy"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
-                                        onMouseEnter={handleHover}
                                     >
-                                        <NavDropdown.Item href="#action3"><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-                                            <span class="d-inline-block bg-success rounded-circle p-1"></span>
-                                            Action
-                                        </a></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action4">
-                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                        <NavDropdown.Item href="#">
+                                            Why Choose PayBuddy
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item href="#">
                                                 <span class="d-inline-block bg-primary rounded-circle p-1"></span>
-                                                Another Action
-                                            </a>
+                                                Success Rates
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item href="#action4">
-                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                        <NavDropdown.Item href="#">
                                                 <span class="d-inline-block bg-danger rounded-circle p-1"></span>
-                                                Something else here
-                                            </a>
+                                                Demo
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item href="#action4">
-                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                        <NavDropdown.Item href="#">
                                                 <span class="d-inline-block bg-info rounded-circle p-1"></span>
                                                 Seperated link
-                                            </a>
                                         </NavDropdown.Item>
                                     </NavDropdown>
+                                    <Nav.Link href="#">Support</Nav.Link>
+                                    <Nav.Link href="#">FAQ</Nav.Link>
                                 </Nav>
-                                {/* <Form className="d-flex">
-                                    <Form.Control
-                                        type="search"
-                                        placeholder="Search"
-                                        className="me-2"
-                                        aria-label="Search"
-                                    />
-                                </Form> */}
-                                    <Button variant="dark">Create a free acount</Button>
+                                <Link variant="dark" to="/hh" className='btn btn-dark'>Create a free acount</Link>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
                     </Container>
