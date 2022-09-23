@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 // import Signup from "./Pages/SignUp"
 import {  Route, Routes } from "react-router-dom";
 import Pagenotfound from './Components/Pagenotfound';
+import Signup from './Components/Signup';
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
         <div className="content">
           <Routes>
             <Route path='/' element={<Home/>} />
-            {/* <Route path='/SignUp' element={<Signup/>} /> */}
+            <Route path='/Signup' element={<Signup/>} />
+            {/* 404 Page*/}
             <Route path='*' element={<Pagenotfound/>} />
-
           </Routes>
         </div>
         <Footer />

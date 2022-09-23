@@ -14,9 +14,11 @@
 .fw-bold {
   color: #232858 !important;
 }
-ul{
+
+ul {
   list-style: none;
 }
+
 /* 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -49,31 +51,59 @@ input {
 span {
   font-weight: 400 !important;
 }
-.section1{
+
+.section1 {
   background-image: url(./img/curved-pattern.png);
   background-size: 600px 600px;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.section3{
+
+.section3 {
   background-image: url(./img/circular-pattern.png);
   background-size: 600px 600px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
 }
-.border-success{
+
+.border-success {
   background-color: #F1FEF4;
 }
-.sect3{
+
+.sect3 {
   background-image: url(./img/entrepreneour.jpg);
   background-size: cover;
   background-position: center;
 }
 
-/* .footer{
-  background-image: url(./img/PayBuddy.png);
+/* SignUp page */
+.carousel1 {
+  background-image: url(./img/car1.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: calc(300px);
-  
-} */
+  background-position: left 0 top -245px;
+  height: 94vh;
+}
+
+.carousel2 {
+  background-image: url(./img/car3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 0 top -350px;
+  height: 94vh;
+}
+
+.carousel3 {
+  background-image: url(./img/car7.jpg);
+  background-position: left 0 top -30px;
+  background-size: cover;
+  height: 94vh;
+}
+
+.carousel4 {
+  background-image: url(./img/car6.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 94vh;
+}

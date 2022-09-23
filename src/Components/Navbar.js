@@ -57,7 +57,7 @@ function OffcanvasExample() {
                                     <Link to="/Support" className='nav-link'>Support</Link>
                                     <Link to="/Faq" className='nav-link'>FAQ</Link>
                                 </Nav>
-                                <Link variant="dark" to="/signin" className='btn btn-dark'>Create a free acount</Link>
+                                <Link variant="dark" to="/Signup" className='btn btn-dark'>Create a free acount</Link>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
                     </Container>
