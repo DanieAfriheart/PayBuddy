@@ -11,14 +11,14 @@ import { TbBrandMeta, TbBrandInstagram, TbBrandTwitter } from "react-icons/tb";
 const Footer = () => {
     return (
         <>
-            <Container fluid>
+            <Container fluid className='footer pt-5'>
                 <Container>
                     <div classNameName="footer py-5">
                         <Row className='justify-content-between'>
                             <Col md={2} classNameName='col-6 mb-3'>
                                 <h5>Why PayBuddy</h5>
                                 <ul className="nav flex-column">
-                                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Whychoose PayBuddy</a></li>
+                                    <li className="nav-item mb-2"><a href="/l" className="nav-link p-0 text-muted">Whychoose PayBuddy</a></li>
                                     <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Success Rate</a></li><br />
 
                                     <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">For entrepreneurs</a></li>

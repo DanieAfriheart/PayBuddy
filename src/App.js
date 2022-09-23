@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 // import Signup from "./Pages/SignUp"
 import {  Route, Routes } from "react-router-dom";
+import Pagenotfound from './Components/Pagenotfound';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>} />
             {/* <Route path='/SignUp' element={<Signup/>} /> */}
-            {/* <Route path='*' element={<S/>} /> */}
+            <Route path='*' element={<Pagenotfound/>} />
 
           </Routes>
         </div>
