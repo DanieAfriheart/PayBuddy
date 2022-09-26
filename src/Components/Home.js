@@ -21,7 +21,7 @@ import { useState } from 'react';
 const Home = () => {
     //  const[mod,setMod]=useState("")
     // useEffect(()=>{
-     
+
     // },[])
 
     window.onload = function () {
@@ -122,7 +122,7 @@ const Home = () => {
 
             {/* Section 2 */}
 
-            <Container fluid className='py-5 section2 px-0 mb-3' style={{backgroundColor: '#F3F3EE'}}>
+            <Container fluid className='py-5 section2 px-0 mb-3' style={{ backgroundColor: '#F3F3EE' }}>
                 <Container className='rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
 
