@@ -18,6 +18,9 @@ import designer from "../img/designer.jpg"
 import creator from "../img/creator.jpg"
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
 const Home = () => {
     //  const[mod,setMod]=useState("")
     // useEffect(()=>{
@@ -32,6 +35,7 @@ const Home = () => {
 
     return (
         <>
+            <Navbar />
             <Container fluid className='py-5 mt-5 d-flex align-items-center hero' >
                 <Container className='h-100'>
                     {/* Modal */}
@@ -51,10 +55,6 @@ const Home = () => {
                                 <div class="modal-body">
                                     <p className="text-small">This is a demo website for portfolio content, not a real financial institution</p>
                                 </div>
-                                {/* <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -63,20 +63,9 @@ const Home = () => {
                     <Row className='py-5 d-flex flex-row align-items-center justify-content-between h-100'>
                         <Col md={6}>
                             <div className="header">
-                                {/* <p className="text-small">This is a demo website for portfolio content, not a real financial institution</p> */}
                                 <h1 className='col-md-10 display-4 fw-bold'>Credit card for Developers.</h1>
                                 <p className='my-4 col-md-10 lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci odit est dolor quod numquam, modi, quaerat delectus in excepturi, cupiditate.</p>
                             </div>
-                            {/* <Form className="d-flex border rounded p-1 mx-auto mb-5">
-                                <Form.Control
-                                    type="Input"
-                                    placeholder="Subscribe to our newsletter"
-                                    className="me-2"
-                                    aria-label="Search"
-                                    style={{ border: 'none', backgroundColor: 'none' }}
-                                />
-                                <Button variant="dark" className='Btn' onClick={handleNewsletter}>Subscribe</Button>
-                            </Form> */}
                             <Row className='col-12 justify-content-between'>
                                 <Col className='img-fluid col-3'><img src={Paystack} alt="" /></Col>
                                 <Col className='img-fluid col-3'><img src={Mono} alt="" /></Col>
@@ -173,14 +162,13 @@ const Home = () => {
                                 </Button>
                             </div>
                         </Col>
+
                         <Col md={6}>
                             <img src={require('../img/home.gif')} alt="" className='img-fluid' />
                         </Col>
                     </Row>
                 </Container>
             </Container>
-
-            {/* Section 3 */}
 
             <Container fluid className='py-5 section3 px-0' style={{ backgroundColor: '#F5F5FF' }}>
                 <Container className='rounded rounded-4'>
@@ -233,6 +221,7 @@ const Home = () => {
                 </Container>
             </Container>
 
+            <Footer />
         </>
     );
 }
