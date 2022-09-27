@@ -1,15 +1,23 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+
+// Icon
+import { AiTwotoneStar } from "react-icons/ai"
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
+
 const Signup = () => {
     const navigate = useNavigate();
-
+    useEffect(() => {
+        document.title = 'PayBuddy | Create a free acount '
+    })
     return (
         <React.Fragment>
             <div className="row w-100 mx-auto" style={{ height: '100vh' }}>
                 {/* Registration form */}
                 <div className="col-md-6 p-5">
-                    <div className="col-9 mx-auto d-flex justify-content-center flex-column h-100">
-                        <h4 className="mb-5">Create an account</h4>
+                    <div className="col-8 mx-auto d-flex justify-content-center flex-column h-100">
+                        <h4 className="mb-5 fw-bold">Create an account :)</h4>
                         <form className="needs-validation" novalidate>
                             <div className="row g-4">
                                 <div className="col-sm-6">
@@ -27,17 +35,6 @@ const Signup = () => {
                                         Valid last name is required.
                                     </div>
                                 </div>
-
-                                {/* <div className="col-6">
-                                    <label for="username" className="form-label">Username</label>
-                                    <div className="input-group has-validation">
-                                        <span className="input-group-text">@</span>
-                                        <input type="text" className="form-control" id="username" placeholder="Username" required />
-                                        <div className="invalid-feedback">
-                                            Your username is required.
-                                        </div>
-                                    </div>
-                                </div> */}
 
                                 <div className="col-12">
                                     <label for="email" className="form-label">Email <span className="text-muted">(Optional)</span></label>
@@ -96,7 +93,32 @@ const Signup = () => {
                     <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div onClick={() => navigate(-1)} style={{ position: 'absolute', zIndex: '10' }} className='m-5 text-light'>back</div>
-                            <div className="carousel-item active carousel1"></div>
+                            <div className="carousel-item active carousel1 px-0">
+                                <div class="text-light w-100 me-auto align-items-end d-flex justify-content-end h-100 px-4">
+                                    <div className="p-5 w-100">
+                                        <div className="row pt-3 w-100">
+                                            <div className="col">
+                                                <h3>Sophie Hall</h3>
+                                                <strong>Founder, Catalop</strong>
+                                                <p>Web Design Agency</p>
+                                            </div>
+                                            <div className="col text-end">
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+
+                                                <div className="pt-3">
+                                                    <BsArrowLeft style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
+
+                                                    <BsArrowRight style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div className="carousel-item carousel2"></div>
                             <div className="carousel-item carousel3"></div>
                             <div className="carousel-item carousel4"></div>

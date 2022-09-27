@@ -2,9 +2,18 @@ import React from 'react'
 import Robot from "../img/robot.gif";
 import { Link } from "react-router-dom";
 import { FcRight } from "react-icons/fc";
+import Footer from './Footer'
+import Navbar from './Navbar'
+import { useEffect } from 'react';
+
 function Pagenotfound() {
+    useEffect(() => {
+        document.title = '404 | Page Not Found';
+    });
+
     return (
         <React.Fragment>
+            <Navbar />
             <div className="container-fluid py-5">
                 <div className="container py-5">
                     <div className="row">
@@ -23,6 +32,7 @@ function Pagenotfound() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </React.Fragment>
     )
 }

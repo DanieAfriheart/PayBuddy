@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 
 // Icon
 import { FcGoogle } from "react-icons/fc";
 function Signin() {
+    useEffect(()=>{
+        document.title='PayBuddy | Welcome back, sign into your account'
+    })
     const navigate = useNavigate();
+
     return (
         <React.Fragment>
             <div className="row w-100 mx-auto" style={{ height: '100vh' }}>
@@ -13,9 +17,9 @@ function Signin() {
                     <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div onClick={() => navigate(-1)} style={{ position: 'absolute', zIndex: '10' }} className='m-5 text-light'>back</div>
-                            <div className="carousel-item active carousel1"></div>
+                            <div className="carousel-item active carousel3"></div>
                             <div className="carousel-item carousel2"></div>
-                            <div className="carousel-item carousel3"></div>
+                            <div className="carousel-item carousel1"></div>
                             <div className="carousel-item carousel4"></div>
                         </div>
                         <button className="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -30,8 +34,8 @@ function Signin() {
                 </div>
                 {/* Registration form */}
                 <div className="col-md-6 p-5">
-                    <div className="col-9 mx-auto d-flex justify-content-center flex-column h-100">
-                        <h4 className="">Welcome back</h4>
+                    <div className="col-8 mx-auto d-flex justify-content-center flex-column h-100">
+                        <h4 className="fw-bold">Welcome back :)</h4>
                         <p>Welcome back, please enter your details.</p>
                         <form className="needs-validation mt-3" novalidate>
                             <div className="row g-4">
@@ -56,14 +60,16 @@ function Signin() {
                                         Please enter a valid email address for shipping updates.
                                     </div>
                                 </div>
-                                <div class="form-check">
+                                {/* <div class="form-check">
                                     <input id="credit" type="checkbox" class="form-check-input" checked required />
                                     <label class="form-check-label" for="credit">Remember me</label>
-                                </div>
+                                </div> */}
 
                             </div>
 
                             <Link to="/" className="w-100 btn btn-dark btn-lg my-4" type="submit">Log in</Link>
+                            <p className='text-center'>Don't have an account? <Link to='/Signup' className='fw-bold' style={{ textDecoration: 'none' }}> Sign up for free</Link></p>
+                            <img src={require("../img/scribble.png")} alt="" style={{position:'absolute', marginLeft:'230px', marginBottom:'100px'}}/>
                         </form>
                     </div>
                 </div>
