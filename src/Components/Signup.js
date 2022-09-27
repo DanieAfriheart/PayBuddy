@@ -1,14 +1,14 @@
 import React from "react";
 // Pictures
 // import CarouselImage1 from "../img/car1.jpg"
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
     const nav = useNavigate();
 
     return (
         <React.Fragment>
-            <div className="container-fluid" style={{height:'100vh'}}>
-                <div className="row w-100" style={{outline:"5px solid green"}}>
+            {/* <div className="container-fluid" style={{height:'100vh'}}> */}
+                <div className="row w-100 mx-auto" style={{height: '100vh'}}>
                     <div className="col-md-6 px-0">
                         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -31,7 +31,7 @@ const Signup = () => {
                         <button className="btn btn-dark" onClick={() => nav(-1)}>back</button>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </React.Fragment>
     );
 }
