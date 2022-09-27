@@ -2,30 +2,21 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 // Icon
-// import { FcRight } from "react-icons/fc";
 import { BsArrowRight } from "react-icons/bs";
 import { FcHighPriority } from "react-icons/fc";
 // images
 import Arm from "../img/ARM.cf099987.svg";
 import Mono from "../img/Mono.bc5aaf90.svg";
 import Paystack from "../img/Paystack.0a3649f0.svg";
-// import Transfer from "../img/trans.svg";
 import developer from "../img/developer.jpg"
 import designer from "../img/designer.jpg"
 import creator from "../img/creator.jpg"
-import { useEffect } from 'react';
-import { useState } from 'react';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 const Home = () => {
-    //  const[mod,setMod]=useState("")
-    // useEffect(()=>{
-
-    // },[])
 
     window.onload = function () {
         setTimeout(() => {
@@ -36,15 +27,13 @@ const Home = () => {
     return (
         <>
             <Navbar />
+
             <Container fluid className='py-5 mt-5 d-flex align-items-center hero' >
                 <Container className='h-100'>
                     {/* Modal */}
-                    {/* <!-- Button trigger modal --> */}
                     <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal" id='myModal'>
                         Launch demo modal
                     </button>
-
-                    {/* <!-- Modal --> */}
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
@@ -59,7 +48,7 @@ const Home = () => {
                         </div>
                     </div>
 
-
+                    {/* Hero */}
                     <Row className='py-5 d-flex flex-row align-items-center justify-content-between h-100'>
                         <Col md={6}>
                             <div className="header">
@@ -110,7 +99,6 @@ const Home = () => {
             </Container>
 
             {/* Section 2 */}
-
             <Container fluid className='py-5 section2 px-0 mb-3' style={{ backgroundColor: '#F3F3EE' }}>
                 <Container className='rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
@@ -119,7 +107,6 @@ const Home = () => {
                             <h5 className='mb-2' style={{ color: '#F2761B' }}>"Transfa"</h5>
                             <h1 className=''>Seamless payments experience</h1>
                             <p className='my-3 col-md-10 '>Give your customers the gift of modern, frictionless, painless payments. Integrate Paystack once and let your customers pay you however they want.</p>
-                            {/* <Button>Create free account</Button> */}
                             <div className='px-0'>
                                 <Row>
                                     <Col>
@@ -162,7 +149,6 @@ const Home = () => {
                                 </Button>
                             </div>
                         </Col>
-
                         <Col md={6}>
                             <img src={require('../img/home.gif')} alt="" className='img-fluid' />
                         </Col>
@@ -170,6 +156,7 @@ const Home = () => {
                 </Container>
             </Container>
 
+            {/* Section 3 */}
             <Container fluid className='py-5 section3 px-0' style={{ backgroundColor: '#F5F5FF' }}>
                 <Container className='rounded rounded-4'>
                     <h1 className=''>Who can use PayBuddy</h1>

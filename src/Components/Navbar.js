@@ -6,23 +6,18 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link, useNavigate } from "react-router-dom"
 
 function OffcanvasExample() {
-    const nav = useNavigate();
-    // const handleSignUp = () => {
-    //     console.log('hello');
-    //     nav('/dggd')
-    //     // window.location.href = "../"
-    // }
+    const navigate = useNavigate();
 
     return (
         <>
             {['md'].map((expand) => (
                 <Navbar key={expand} bg="light" expand={expand} className="mb-3 shadow" fixed='top'>
                     <Container>
-                        <Navbar.Brand className='fw-bold' onClick={() => { nav("/") }} style={{ cursor: 'pointer' }}>PayBuddy</Navbar.Brand>
+                        <Navbar.Brand className='fw-bold' onClick={() => { navigate("/") }} style={{ cursor: 'pointer' }}>PayBuddy</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end">
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className='fw-bold' onClick={() => { nav("/") }}>
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className='fw-bold' onClick={() => { navigate("/") }}>
                                     PayBuddy
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
