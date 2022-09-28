@@ -3,7 +3,9 @@
 * {
   /* outline: 1px solid red; */
 }
-
+.btn:hover{
+  background-color: #453582 !important;
+}
 .logoIcon {
   width: 1.2em;
 }

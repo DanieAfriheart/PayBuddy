@@ -3,9 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 
 // Icon
 import { FcGoogle } from "react-icons/fc";
+import { AiTwotoneStar } from "react-icons/ai"
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
+
 function Signin() {
-    useEffect(()=>{
-        document.title='PayBuddy | Welcome back, sign into your account'
+    useEffect(() => {
+        document.title = 'PayBuddy | Welcome back, sign into your account'
     })
     const navigate = useNavigate();
 
@@ -17,10 +20,114 @@ function Signin() {
                     <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div onClick={() => navigate(-1)} style={{ position: 'absolute', zIndex: '10' }} className='m-5 text-light'>back</div>
-                            <div className="carousel-item active carousel3"></div>
-                            <div className="carousel-item carousel2"></div>
-                            <div className="carousel-item carousel1"></div>
-                            <div className="carousel-item carousel4"></div>
+                            <div className="carousel-item active carousel1 px-0">
+                                {/* Carousel caption */}
+                                <div class="text-light align-items-end d-flex h-100 px-4">
+                                    <div className="p-5 w-100">
+                                        <div className="row pt-3 w-100">
+                                            <div className="col">
+                                                <h3>Esuola Daniel</h3>
+                                                <strong>Founder, PayBuddy</strong>
+                                                <p>Web Application Fintech</p>
+                                            </div>
+                                            <div className="col text-end">
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+
+                                                <div className="pt-3">
+                                                    <BsArrowLeft style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
+
+                                                    <BsArrowRight style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item carousel2">
+                                {/* Carousel caption */}
+                                <div class="text-light align-items-end d-flex h-100 px-4">
+                                    <div className="p-5 w-100">
+                                        <div className="row pt-3 w-100">
+                                            <div className="col">
+                                                <h3>Sophie Hall</h3>
+                                                <strong>Founder, Catalop</strong>
+                                                <p>Web Design Agency</p>
+                                            </div>
+                                            <div className="col text-end">
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+
+                                                <div className="pt-3">
+                                                    <BsArrowLeft style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
+
+                                                    <BsArrowRight style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item carousel3">
+                                {/* Carousel caption */}
+                                <div class="text-light align-items-end d-flex h-100 px-4">
+                                    <div className="p-5 w-100">
+                                        <div className="row pt-3 w-100">
+                                            <div className="col">
+                                                <h3>Sophie Hall</h3>
+                                                <strong>Founder, Catalop</strong>
+                                                <p>Web Design Agency</p>
+                                            </div>
+                                            <div className="col text-end">
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+
+                                                <div className="pt-3">
+                                                    <BsArrowLeft style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
+
+                                                    <BsArrowRight style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item carousel4">
+                                {/* Carousel caption */}
+                                <div class="text-light align-items-end d-flex h-100 px-4">
+                                    <div className="p-5 w-100">
+                                        <div className="row pt-3 w-100">
+                                            <div className="col">
+                                                <h3>Sophie Hall</h3>
+                                                <strong>Founder, Catalop</strong>
+                                                <p>Web Design Agency</p>
+                                            </div>
+                                            <div className="col text-end">
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+
+                                                <div className="pt-3">
+                                                    <BsArrowLeft style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
+
+                                                    <BsArrowRight style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button className="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -69,7 +176,7 @@ function Signin() {
 
                             <Link to="/" className="w-100 btn btn-dark btn-lg my-4" type="submit">Log in</Link>
                             <p className='text-center'>Don't have an account? <Link to='/Signup' className='fw-bold' style={{ textDecoration: 'none' }}> Sign up for free</Link></p>
-                            <img src={require("../img/scribble.png")} alt="" style={{position:'absolute', marginLeft:'230px', marginBottom:'100px'}}/>
+                            <img src={require("../img/scribble.png")} alt="" style={{ position: 'absolute', marginLeft: '230px', bottom: '130px' }} />
                         </form>
                     </div>
                 </div>

@@ -14,6 +14,130 @@ const Signup = () => {
     return (
         <React.Fragment>
             <div className="row w-100 mx-auto" style={{ height: '100vh' }}>
+                {/* Carousel */}
+                <div className="col-md-6 px-0">
+                    <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div className="carousel-inner">
+                            <div onClick={() => navigate(-1)} style={{ position: 'absolute', zIndex: '10' }} className='m-5 text-light'>back</div>
+                            <div className="carousel-item active carousel1 px-0">
+                                {/* Carousel caption */}
+                                <div class="text-light align-items-end d-flex h-100 px-4">
+                                    <div className="p-5 w-100">
+                                        <div className="row pt-3 w-100">
+                                            <div className="col">
+                                                <h3>Esuola Daniel</h3>
+                                                <strong>Founder, PayBuddy</strong>
+                                                <p>Web Application Fintech</p>
+                                            </div>
+                                            <div className="col text-end">
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+
+                                                <div className="pt-3">
+                                                    <BsArrowLeft style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
+
+                                                    <BsArrowRight style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item carousel2">
+                                {/* Carousel caption */}
+                                <div class="text-light align-items-end d-flex h-100 px-4">
+                                    <div className="p-5 w-100">
+                                        <div className="row pt-3 w-100">
+                                            <div className="col">
+                                                <h3>Sophie Hall</h3>
+                                                <strong>Founder, Catalop</strong>
+                                                <p>Web Design Agency</p>
+                                            </div>
+                                            <div className="col text-end">
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+
+                                                <div className="pt-3">
+                                                    <BsArrowLeft style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
+
+                                                    <BsArrowRight style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item carousel3">
+                                {/* Carousel caption */}
+                                <div class="text-light align-items-end d-flex h-100 px-4">
+                                    <div className="p-5 w-100">
+                                        <div className="row pt-3 w-100">
+                                            <div className="col">
+                                                <h3>Sophie Hall</h3>
+                                                <strong>Founder, Catalop</strong>
+                                                <p>Web Design Agency</p>
+                                            </div>
+                                            <div className="col text-end">
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+
+                                                <div className="pt-3">
+                                                    <BsArrowLeft style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
+
+                                                    <BsArrowRight style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item carousel4">
+                                {/* Carousel caption */}
+                                <div class="text-light align-items-end d-flex h-100 px-4">
+                                    <div className="p-5 w-100">
+                                        <div className="row pt-3 w-100">
+                                            <div className="col">
+                                                <h3>Sophie Hall</h3>
+                                                <strong>Founder, Catalop</strong>
+                                                <p>Web Design Agency</p>
+                                            </div>
+                                            <div className="col text-end">
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+                                                <AiTwotoneStar />
+
+                                                <div className="pt-3">
+                                                    <BsArrowLeft style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
+                                                    <BsArrowRight style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button className="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
                 {/* Registration form */}
                 <div className="col-md-6 p-5">
                     <div className="col-8 mx-auto d-flex justify-content-center flex-column h-100">
@@ -88,51 +212,7 @@ const Signup = () => {
                     </div>
                 </div>
 
-                {/* Carousel */}
-                <div className="col-md-6 px-0">
-                    <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div className="carousel-inner">
-                            <div onClick={() => navigate(-1)} style={{ position: 'absolute', zIndex: '10' }} className='m-5 text-light'>back</div>
-                            <div className="carousel-item active carousel1 px-0">
-                                <div class="text-light w-100 me-auto align-items-end d-flex justify-content-end h-100 px-4">
-                                    <div className="p-5 w-100">
-                                        <div className="row pt-3 w-100">
-                                            <div className="col">
-                                                <h3>Sophie Hall</h3>
-                                                <strong>Founder, Catalop</strong>
-                                                <p>Web Design Agency</p>
-                                            </div>
-                                            <div className="col text-end">
-                                                <AiTwotoneStar />
-                                                <AiTwotoneStar />
-                                                <AiTwotoneStar />
-                                                <AiTwotoneStar />
-                                                <AiTwotoneStar />
 
-                                                <div className="pt-3">
-                                                    <BsArrowLeft style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
-
-                                                    <BsArrowRight style={{ color: 'white' }} className="btn fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="carousel-item carousel2"></div>
-                            <div className="carousel-item carousel3"></div>
-                            <div className="carousel-item carousel4"></div>
-                        </div>
-                        <button className="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
             </div>
         </React.Fragment>
     );
