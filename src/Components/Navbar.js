@@ -42,10 +42,10 @@ function OffcanvasExample() {
                                             Seperated link
                                         </NavDropdown.Item>
                                     </NavDropdown>
-                                    <Link to="/Support" className='nav-link'>Support</Link>
-                                    <Link to="/Faq" className='nav-link'>FAQ</Link>
-                                </Nav>
+                                    <Link to="/Faq" className='nav-link px-4'>FAQ</Link>
                                 <Link variant="dark" to="/Signup" className='btn btn-dark'>Create a free acount</Link>
+                                <Link to="/Signin" className='nav-link px-4'>Signin</Link>
+                                </Nav>
                             </Offcanvas.Body>
 
                         </Navbar.Offcanvas>

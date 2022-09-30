@@ -62,7 +62,8 @@ const Home = () => {
                             </Row>
                         </Col>
                         <Col md={6}>
-                            <img className='img-fluid w-100' src={require('../img/HomeImg.png')} alt="" />
+                            <img className='img-fluid w-100' src={require('../img/HomeImg.png')} style={{position:'relative'}}  alt="" />
+                            {/* <img className='img-fluid' src={require('../img/atm.png')} style={{position:'absolute', zIndex:'2', top:'170px', left:'-35%'}} alt="" /> */}
                         </Col>
                     </Row>
                 </Container>

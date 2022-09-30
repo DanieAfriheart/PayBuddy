@@ -20,7 +20,7 @@ function Signin() {
                     <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div onClick={() => navigate(-1)} style={{ position: 'absolute', zIndex: '10' }} className='m-5 text-light'>back</div>
-                            <div className="carousel-item active carousel1 px-0">
+                            <div className="carousel-item active carousel3 px-0">
                                 {/* Carousel caption */}
                                 <div class="text-light align-items-end d-flex h-100 px-4">
                                     <div className="p-5 w-100">
@@ -74,7 +74,7 @@ function Signin() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item carousel3">
+                            <div className="carousel-item carousel1">
                                 {/* Carousel caption */}
                                 <div class="text-light align-items-end d-flex h-100 px-4">
                                     <div className="p-5 w-100">
