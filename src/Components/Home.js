@@ -1,3 +1,4 @@
+import React from "react"
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
@@ -15,9 +16,9 @@ import designer from "../img/designer.jpg"
 import creator from "../img/creator.jpg"
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Link, useState } from "react-router-dom";
 
 const Home = () => {
-
     window.onload = function () {
         setTimeout(() => {
             document.getElementById('myModal').click()
@@ -25,9 +26,8 @@ const Home = () => {
     }
 
     return (
-        <>
+        <React.Fragment>
             <Navbar />
-
             <Container fluid className='py-5 mt-5 d-flex align-items-center hero' >
                 <Container className='h-100'>
                     {/* Modal */}
@@ -47,7 +47,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
                     {/* Hero */}
                     <Row className='py-5 d-flex flex-row align-items-center justify-content-between h-100'>
                         <Col md={6}>
@@ -62,13 +61,12 @@ const Home = () => {
                             </Row>
                         </Col>
                         <Col md={6}>
-                            <img className='img-fluid w-100' src={require('../img/HomeImg.png')} style={{position:'relative'}}  alt="" />
+                            <img className='img-fluid w-100' src={require('../img/HomeImg.png')} style={{ position: 'relative' }} alt="" />
                             {/* <img className='img-fluid' src={require('../img/atm.png')} style={{position:'absolute', zIndex:'2', top:'170px', left:'-35%'}} alt="" /> */}
                         </Col>
                     </Row>
                 </Container>
             </Container>
-
             {/* Section 1 */}
             <Container fluid className='px-4'>
                 <Row className='h-100 mb-3'>
@@ -98,12 +96,10 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-
             {/* Section 2 */}
             <Container fluid className='py-5 section2 px-0 mb-3' style={{ backgroundColor: '#F3F3EE' }}>
                 <Container className='rounded rounded-4'>
                     <Row className='h-100 justify-content-between rounded rounded-4' g={3}>
-
                         <Col md={5} className='justify-content-center d-flex flex-column'>
                             <h5 className='mb-2' style={{ color: '#F2761B' }}>"Transfa"</h5>
                             <h1 className=''>Seamless payments experience</h1>
@@ -145,9 +141,9 @@ const Home = () => {
                                 </Row>
                             </div>
                             <div className="d-flex mt-4">
-                                <Button variant="transparent" className='text-small px-0 border-0'>
+                                <Link to="/Signin" variant="transparent" className='text-small px-0 border-0 nav-link'>
                                     Send money now <BsArrowRight />
-                                </Button>
+                                </Link>
                             </div>
                         </Col>
                         <Col md={6}>
@@ -156,7 +152,6 @@ const Home = () => {
                     </Row>
                 </Container>
             </Container>
-
             {/* Section 3 */}
             <Container fluid className='py-5 section3 px-0' style={{ backgroundColor: '#F5F5FF' }}>
                 <Container className='rounded rounded-4'>
@@ -202,16 +197,13 @@ const Home = () => {
                     </Row>
                 </Container>
             </Container>
-
             <Container fluid className='py-5'>
                 <Container>
-
+                    {/* Empty cause i needed to have extra spacing */}
                 </Container>
             </Container>
-
             <Footer />
-        </>
+        </React.Fragment>
     );
 }
-
 export default Home;

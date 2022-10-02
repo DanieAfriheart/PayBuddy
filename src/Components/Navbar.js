@@ -1,3 +1,4 @@
+import React from "react"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,7 +10,8 @@ function OffcanvasExample() {
     const navigate = useNavigate();
 
     return (
-        <>
+        <React.Fragment>
+
             {['md'].map((expand) => (
                 <Navbar key={expand} bg="light" expand={expand} className="mb-3 shadow" fixed='top'>
                     <Container>
@@ -21,7 +23,6 @@ function OffcanvasExample() {
                                     PayBuddy
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
-
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <NavDropdown title="Why Paybuddy" id={`offcanvasNavbarDropdown-expand-${expand}`}>
@@ -43,17 +44,15 @@ function OffcanvasExample() {
                                         </NavDropdown.Item>
                                     </NavDropdown>
                                     <Link to="/Faq" className='nav-link px-4'>FAQ</Link>
-                                <Link variant="dark" to="/Signup" className='btn btn-dark'>Create a free acount</Link>
-                                <Link to="/Signin" className='nav-link px-4'>Signin</Link>
+                                    <Link variant="dark" to="/Signup" className='btn btn-dark'>Create a free acount</Link>
+                                    <Link to="/Signin" className='nav-link px-4'>Signin</Link>
                                 </Nav>
                             </Offcanvas.Body>
-
                         </Navbar.Offcanvas>
                     </Container>
                 </Navbar>
-            ))
-            }
-        </>
+            ))}
+        </React.Fragment>
     );
 }
 

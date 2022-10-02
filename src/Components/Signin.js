@@ -36,10 +36,8 @@ function Signin() {
                                                 <AiTwotoneStar />
                                                 <AiTwotoneStar />
                                                 <AiTwotoneStar />
-
                                                 <div className="pt-3">
                                                     <BsArrowLeft style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
-
                                                     <BsArrowRight style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
                                                 </div>
                                             </div>
@@ -63,10 +61,8 @@ function Signin() {
                                                 <AiTwotoneStar />
                                                 <AiTwotoneStar />
                                                 <AiTwotoneStar />
-
                                                 <div className="pt-3">
                                                     <BsArrowLeft style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
-
                                                     <BsArrowRight style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
                                                 </div>
                                             </div>
@@ -90,10 +86,8 @@ function Signin() {
                                                 <AiTwotoneStar />
                                                 <AiTwotoneStar />
                                                 <AiTwotoneStar />
-
                                                 <div className="pt-3">
                                                     <BsArrowLeft style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
-
                                                     <BsArrowRight style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
                                                 </div>
                                             </div>
@@ -117,10 +111,8 @@ function Signin() {
                                                 <AiTwotoneStar />
                                                 <AiTwotoneStar />
                                                 <AiTwotoneStar />
-
                                                 <div className="pt-3">
                                                     <BsArrowLeft style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border me-3 border-2" data-bs-target="#carouselExampleFade" data-bs-slide="prev" />
-
                                                     <BsArrowRight style={{ color: 'white' }} className="fs-1 p-2 rounded-circle border border-2" data-bs-target="#carouselExampleFade" data-bs-slide="next" />
                                                 </div>
                                             </div>
@@ -146,7 +138,6 @@ function Signin() {
                         <p>Welcome back, please enter your details.</p>
                         <form className="needs-validation mt-3" novalidate>
                             <div className="row g-4">
-
                                 <div className="col-12">
                                     <Link to="/" className="w-100 btn btn-outline-secondary btn-lg my-4" type="submit"><FcGoogle /> Log in with Google </Link>
                                     <p className='text-center'>Or</p>
@@ -159,7 +150,6 @@ function Signin() {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div className="col-12">
                                     <label for="password" className="form-label">Password <span className="text-muted"></span></label>
                                     <input type="password" className="form-control" id="password" placeholder="*****" />
@@ -171,16 +161,13 @@ function Signin() {
                                     <input id="credit" type="checkbox" class="form-check-input" checked required />
                                     <label class="form-check-label" for="credit">Remember me</label>
                                 </div> */}
-
                             </div>
-
                             <Link to="/" className="w-100 btn btn-dark btn-lg my-4" type="submit">Log in</Link>
                             <p className='text-center'>Don't have an account? <Link to='/Signup' className='fw-bold' style={{ textDecoration: 'none' }}> Sign up for free</Link></p>
                             <img src={require("../img/scribble.png")} alt="" style={{ position: 'absolute', marginLeft: '230px', bottom: '130px' }} />
                         </form>
                     </div>
                 </div>
-
             </div>
         </React.Fragment>
     )
